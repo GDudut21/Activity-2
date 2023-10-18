@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111; /* Dark background color (black) */
+    color: #fff; /* White text color */
+}
+
+body {
+    background-image: url('/Assets/bg-lol.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #e44d26; /* League of Legends red color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffcc29; /* League of Legends gold color on hover */
+}
+
+nav, .web-nav {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    background-color: #111; /* Dark background for navigation */
+}
+
+.web-nav {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+
+.menu-item a {
+    color: #fff; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    
+}
+
+.menu-item a:hover {
+    color: #ffcc29; 
+}
+
+.logo{
+    font-size: 2.5rem;
+}
+
+.logo:hover{
+  cursor: pointer; 
+    transform: scale(1.1);
+}
