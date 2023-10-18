@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-image: url('/Assets/bg-lol.jpeg');
+    background-image: url('Assets/bg-lol.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,7 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    background-color: #111; /* Dark background for navigation */
+
 }
 
 .web-nav {
@@ -52,16 +52,6 @@ nav {
 }
 
 
-.menu-item a {
-    color: #fff; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    
-}
-
-.menu-item a:hover {
-    color: #ffcc29; 
-}
 
 .logo{
     font-size: 2.5rem;
@@ -70,4 +60,33 @@ nav {
 .logo:hover{
   cursor: pointer; 
     transform: scale(1.1);
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu-links li {
+    margin: 0 10px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.menu-links a:hover {
+    color: gold; /* League of Legends red color on hover */
+}
+
+.logo-image {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
 }
