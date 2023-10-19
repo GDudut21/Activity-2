@@ -1,92 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #111; /* Dark background color (black) */
-    color: #fff; /* White text color */
+  font-family: "Montserrat", sans-serif;
+  background-color: #111; /* Dark background color (black) */
+  color: #fff; /* White text color */
 }
 
 body {
-    background-image: url('Assets/bg-lol.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url("/Assets/bg-lol.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-image: url("Assets/bg-lol.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-    color: #e44d26; /* League of Legends red color */
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #e44d26; /* League of Legends red color */
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 a:hover {
-    color: #ffcc29; /* League of Legends gold color on hover */
+  color: #ffcc29; /* League of Legends gold color on hover */
 }
 
-nav, .web-nav {
-    display: flex;
+nav,
+.web-nav {
+  display: flex;
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  min-width: 600px;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  margin: auto;
 }
 
 .web-nav {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-    margin-left: auto;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-left: auto;
 }
 
-
-
-.logo{
-    font-size: 2.5rem;
+.menu-item a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.logo:hover{
-  cursor: pointer; 
-    transform: scale(1.1);
+.menu-item a:hover {
+  color: #ffcc29;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .menu-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .menu-links li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .menu-links a {
-    text-decoration: none;
-    color: #fff; /* White text color */
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s;
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+
+.menu-links a:after {
+  content: "";
+  position: absolute;
+  background-color: #ffcc29;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  transition: 0.75s;
+}
+
+.menu-links a:hover:after {
+  width: 100%;
 }
 
 .menu-links a:hover {
-    color: gold; /* League of Legends red color on hover */
+  color: gold; /* League of Legends red color on hover */
 }
 
 .logo-image {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: flex;
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: flex;
 }
