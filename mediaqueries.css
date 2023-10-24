@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {
+    .container {
+      width: 70%; 
+      margin: 0 auto; 
+    }
+  
+    .champ-cont {
+      margin: 10px;
+    }
+  
+    .image-container {
+      height: auto;
+    }
+  
+    .image-container:hover {
+      transform: scale(1); 
+      
+    }
+  }
+  
