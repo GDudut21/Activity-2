@@ -726,3 +726,13 @@ h4 {
   top: 0;
   left: 0;
 }
+
+.card .info{
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 1;
+  transform: translateY(30px);
+  transition: 0.5s all;
+
+}
