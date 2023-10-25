@@ -690,7 +690,7 @@ h4 {
 #community h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: white; /* League of Legends gold */
+  color: white; 
 }
 
 #community p {
@@ -711,7 +711,7 @@ h4 {
 }
 
 .community-links a:hover {
-  color: #e44d26; /* League of Legends orange on hover */
+  color: #e44d26; 
 }
 
 .community-links img {
