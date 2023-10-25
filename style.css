@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap");
 
 
-
 :root {
   --text-color: #f9f9f9;
   --get-button: rgb(208, 168, 92);
@@ -25,6 +24,7 @@ body {
   scroll-behavior: smooth;
   padding-top: 17vh;
 }
+
 
 a {
   color: #e44d26;
@@ -121,6 +121,8 @@ nav {
         background-color: rgba(57, 57, 57, 0.4); 
         color: #fff;
         padding: 20px;     
+        max-width: 1200px;
+        margin: 0 auto;
         border-radius: 20px; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     }
@@ -677,4 +679,43 @@ h4 {
   border-top-color: goldenrod;
   border-bottom-color: goldenrod;
   animation: 5s spin infinite ease-in-out;
+}
+
+/* Style for the Community Section with League of Legends Theme */
+#community {
+  color: #fff;
+  text-align: center;
+}
+
+#community h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white; /* League of Legends gold */
+}
+
+#community p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.community-links {
+  display: flex;
+  justify-content: center;
+}
+
+.community-links a {
+  text-decoration: none;
+  color:white; 
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.community-links a:hover {
+  color: #e44d26; /* League of Legends orange on hover */
+}
+
+.community-links img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
