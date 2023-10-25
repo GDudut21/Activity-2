@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap");
 
 
-
 :root {
   --text-color: #f9f9f9;
   --get-button: rgb(208, 168, 92);
@@ -23,7 +22,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   scroll-behavior: smooth;
+  padding-top: 17vh;
 }
+
 
 a {
   color: #e44d26;
@@ -36,11 +37,17 @@ a:hover {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2); /* Set the background color here */
+  z-index: 1000;
+  transition: background-color 0.1s;
 }
 
 .menu-item a {
@@ -114,6 +121,8 @@ nav {
         background-color: rgba(57, 57, 57, 0.4); 
         color: #fff;
         padding: 20px;     
+        max-width: 1200px;
+        margin: 0 auto;
         border-radius: 20px; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     }
