@@ -16,5 +16,30 @@
       transform: scale(1); 
       
     }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
   }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+@keyframes slide {
+  0% {
+    clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
+  }
+
+  100% {
+    clip-path: polygon(0% 100%, 0% -100%, 200% 100%);
+  }
+}
+
   
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
