@@ -671,3 +671,24 @@ h4 {
   border-bottom-color: goldenrod;
   animation: 5s spin infinite ease-in-out;
 }
+
+{
+  .box-sizing: .border-box;
+   font-family: 'Lato', san-serif;  
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222  ;
+}
+
+.wrapper{
+   display: flex;
+    width: 70%;
+    justify-content: space-around;
+    
+}
