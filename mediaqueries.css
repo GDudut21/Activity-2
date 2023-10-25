@@ -18,6 +18,12 @@
     }
 }
 
+@media screen and (max-width: 805px){
+.slider__title .slider__title__row .slider__heading h2 {
+    font-size: calc(40px + 3.03vw);
+  }
+}
+
 @keyframes slideRight {
   0% {
     transform: translateX(100%);

@@ -13,6 +13,34 @@
   box-sizing: border-box;
 }
 
+.web__title {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 10px 0;
+}
+
+.web__title .web__title__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* slider - heading */
+.web__title .web__title__row .web__heading {
+  line-height: 1.1;
+}
+
+.web__title .web__title__row .web__heading h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.web__title .web__title__row .web__heading h2 {
+  font-size: calc(61.82px + 3.03vw);
+  font-style: italic;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #111;
@@ -244,12 +272,42 @@ h4 {
 
 /* SLIDER - TITLE - MAIN */
 
+#roles{
+  background-color: #f9f9f9;
+}
+
+.slider__right__wrapper p{
+  text-align: justify;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} 
+
 .slider__title {
   display: flex;
   justify-content: center;
-  padding: 40px 0 10px 0;
+  padding: 20px 0 5px 0;
 }
 
+.slider__title__row{
+  color: #111;
+}
 .slider__title .slider__title__row {
   display: flex;
   flex-direction: column;
@@ -299,26 +357,12 @@ h4 {
   color: #f9f9f9;
   transition: 0.3s ease;
 }
-.slider__title__button .play-n-btn {
-  display: inline-block;
-  margin-left: 10px;
-  letter-spacing: 0.15em;
-  font-weight: 500;
-  min-width: 10.625rem;
-  padding: 0.625rem 1.25rem;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: var(--play-button);
-  color: #f9f9f9;
-  transition: 0.3s ease;
-}
+
 
 .slider__title__button .discover-btn:hover {
   border-radius: 0;
 }
-.slider__title__button .play-n-btn:hover {
-  border-radius: 0;
-}
+
 
 /* SLIDER - CONTAINER */
 
@@ -607,11 +651,6 @@ h4 {
   .slider__right__image
   img {
   max-height: 700px;
-}
-
-.role_para1, .role_para2, .role_para3, .role_para4, .role_para5, .role_para6{
-  text-align: justify;
-  font-size: 1rem;
 }
 
 .slider__container
