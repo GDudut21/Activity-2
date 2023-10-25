@@ -679,14 +679,38 @@ h4 {
 
 .wrapper{
    display: flex;
-    width: 70%;
-    justify-content: space-around;
+   position: absolute;
+   top: 520%;
+   left:7%;
+
+}
+
+.wrapper-2{
+  display: flex;
+   position: absolute;
+   top: 520%;
+   left:55%;
+}
+
+.wrapper-3{
+  display: flex;
+  position: absolute;
+  top: 590%;
+  left: 7%;
+
+}
+
+.wrapper-4{
+  display: flex;
+  position: absolute;
+  top: 590%;
+  left: 55%;
 
 }
 
 .card{
-  width: 280px;
-  height: 360px;
+  width: 300px;
+  height: 400px;
   padding: 2rem 1rem;
   background: #fff;
   position: relative;
@@ -706,9 +730,9 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;width: 100%;
+  display: block;width: 180%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(218, 238, 63, 0.5), rgba(205, 232, 86, 0.1));
+  background: linear-gradient(to bottom, rgba(220, 213, 20, 0.859), rgba(206, 213, 20, 0.819));
   z-index: 2;
   transition: 0.5s all;
   opacity: 0;
@@ -719,7 +743,7 @@ h4 {
 }
 
 .card img {
-  width: 100%;
+  width: 180%;
   height: 100%;
   object-fit: cover;
   position: absolute;
