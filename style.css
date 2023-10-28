@@ -13,6 +13,7 @@
   box-sizing: border-box;
 }
 
+
 .web__title {
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@
   align-items: center;
   text-align: center;
 }
-/* slider - heading */
+/* web - heading */
 .web__title .web__title__row .web__heading {
   line-height: 1.1;
 }
@@ -270,7 +271,7 @@ h4 {
   color: gold;
 }
 
-/* SLIDER - TITLE - MAIN */
+/* ROLES */
 
 #roles{
   background-color: #f9f9f9;
@@ -720,10 +721,33 @@ h2 {
   animation: 5s spin infinite ease-in-out;
 }
 
+/* ITEMS */
+
+#items{
+  background-color: white;
+}
+
+.items_border_normal_small {
+  border: 1px solid goldenrod;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.items_pic_small {
+  width: 36px;
+  height: 36px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
 /* Style for the Community Section with League of Legends Theme */
 #community {
   color: #fff;
   text-align: center;
+  margin-top: 20px;
 }
 
 #community h2 {
