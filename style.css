@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap");
 
-
 :root {
   --text-color: #f9f9f9;
   --get-button: rgb(208, 168, 92);
   --nav-background: #111;
   --border-radius: 6.4px;
-} 
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +23,6 @@ body {
   scroll-behavior: smooth;
   padding-top: 17vh;
 }
-
 
 a {
   color: #e44d26;
@@ -113,56 +111,51 @@ nav {
 }
 
 /*home*/
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden; 
-        background-color: rgba(57, 57, 57, 0.4); 
-        color: #fff;
-        padding: 20px;     
-        max-width: 1200px;
-        margin: 0 auto;
-        border-radius: 20px; 
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    }
-      
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(57, 57, 57, 0.4);
+  color: #fff;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
-    .slideshow {
-        display: flex; 
-        animation: slideRight 10s linear infinite;
-      }
-      
-      .slideshow img {
-        max-width:300px;
-        height: auto;
-        margin: 0 10px;
-      }
-      
+.slideshow {
+  display: flex;
+  animation: slideRight 10s linear infinite;
+}
+
+.slideshow img {
+  max-width: 300px;
+  height: auto;
+  margin: 0 10px;
+}
 
 section#home {
   text-align: center;
 }
-a{
-    color: white;
+a {
+  color: white;
 }
 
-  h1{
-    font-size: 3rem;
-  }
-  h1:hover {
-    color: #ffcc29; 
-  }
+h1 {
+  font-size: 3rem;
+}
+h1:hover {
+  color: #ffcc29;
+}
 
-
-  
 /*champions?*/
-
 
 .champ-cont {
   display: flex;
-  justify-content: center; 
-  align-items: center;  
+  justify-content: center;
+  align-items: center;
   margin: 5px;
   text-align: center;
 }
@@ -170,8 +163,8 @@ a{
 .image-container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   transform: 0.3s;
   height: 150px;
 }
@@ -181,25 +174,24 @@ a{
   border-radius: 50%;
 }
 
-
 .image-description {
-    visibility: hidden;
-    width: 200px;
-    background-color: rgba(57, 57, 57, 0.4);
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(57, 57, 57, 0.4);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .image-container:hover {
-    transform: scale(1.5); 
+  transform: scale(1.5);
 }
 
 .image-container:hover .image-description {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 .skill img {
   max-width: 20px;
@@ -208,24 +200,24 @@ a{
 .skill {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   max-height: 200px;
   overflow: hidden;
-  text-align: center; 
+  text-align: center;
 }
 
 .skill-description {
   display: none;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   max-height: 100px;
   overflow: hidden;
-  text-align:justify;
+  text-align: justify;
   font-size: small;
 }
 
 .skill-description img {
-  max-width: 20px; 
+  max-width: 20px;
 }
 .skill:hover .skill-description {
   display: block;
@@ -235,7 +227,7 @@ a{
   cursor: pointer;
   color: goldenrod;
   text-decoration: underline;
-  text-align: center; 
+  text-align: center;
 }
 
 h4 {
@@ -609,7 +601,12 @@ h4 {
   max-height: 700px;
 }
 
-.role_para1, .role_para2, .role_para3, .role_para4, .role_para5, .role_para6{
+.role_para1,
+.role_para2,
+.role_para3,
+.role_para4,
+.role_para5,
+.role_para6 {
   text-align: justify;
   font-size: 1rem;
 }
@@ -690,7 +687,7 @@ h4 {
 #community h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: white; 
+  color: white;
 }
 
 #community p {
@@ -705,13 +702,13 @@ h4 {
 
 .community-links a {
   text-decoration: none;
-  color:white; 
+  color: white;
   margin: 0 20px;
   transition: color 0.3s;
 }
 
 .community-links a:hover {
-  color: #e44d26; 
+  color: #e44d26;
 }
 
 .community-links img {
@@ -724,41 +721,38 @@ h4 {
 /*Maps section*/
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-.wrapper{
-   display: flex;
-   position: absolute;
-   top: 520%;
-   left:7%;
-
-}
-
-.wrapper-2{
+.wrapper {
   display: flex;
-   position: absolute;
-   top: 520%;
-   left:55%;
+  position: absolute;
+  top: 520%;
+  left: 7%;
 }
 
-.wrapper-3{
+.wrapper-2 {
+  display: flex;
+  position: absolute;
+  top: 520%;
+  left: 55%;
+}
+
+.wrapper-3 {
   display: flex;
   position: absolute;
   top: 590%;
   left: 6%;
-
 }
 
-.wrapper-4{
+.wrapper-4 {
   display: flex;
   position: absolute;
   top: 590%;
   left: 55%;
-
 }
 
-.card{
+.card {
   width: 300px;
   height: 400px;
   padding: 2rem 1rem;
@@ -766,29 +760,33 @@ h4 {
   position: relative;
   display: flex;
   align-items: flex-end;
-  box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(20px);
-
 }
 
-.card:before{
-  content:"";
+.card:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  display: block;width: 180%;
+  display: block;
+  width: 180%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(205, 205, 205, 0.808), rgba(213, 216, 119, 0.774));
+  background: linear-gradient(
+    to bottom,
+    rgba(205, 205, 205, 0.808),
+    rgba(213, 216, 119, 0.774)
+  );
   z-index: 2;
   transition: 0.5s all;
   opacity: 0;
 }
 
-.card:hover::before{
+.card:hover::before {
   opacity: 1;
 }
 
@@ -801,7 +799,7 @@ h4 {
   left: 0;
 }
 
-.card .info{
+.card .info {
   position: relative;
   z-index: 3;
   color: #fff;
@@ -810,16 +808,16 @@ h4 {
   transition: 0.5s all;
 }
 
-.card:hover .info{
+.card:hover .info {
   opacity: 1;
-  transform: translateY(0px); 
+  transform: translateY(0px);
 }
 
-.card .info h1{
+.card .info h1 {
   margin: 0;
 }
 
-.card .info p{
+.card .info p {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
@@ -827,7 +825,7 @@ h4 {
 }
 .wrapper:hover .info h1 {
   color: red;
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 .wrapper-2:hover .info h1 {
   color: blue; /* Hover color for the second wrapper */
