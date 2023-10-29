@@ -226,6 +226,32 @@ h3 {
 
 
 /* SLIDER - TITLE - MAIN */
+#roles{
+  background-color: #f9f9f9;
+}
+
+.slider__right__wrapper p{
+  text-align: justify;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} 
 
 .slider__title {
   display: flex;
