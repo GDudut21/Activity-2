@@ -1,21 +1,17 @@
 @media (min-width: 1200px) {
-    .container {
-      width: 70%; 
-      margin: 0 auto; 
-    }
-  
-    .champ-cont {
-      margin: 10px;
-    }
-  
-    .image-container {
-      height: auto;
-    }
-  
-    .image-container:hover {
-      transform: scale(1); 
-      
-    }
+  .container {
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .champ-cont {
+    margin: 10px;
+  }
+
+  .image-container {
+    height: auto;
+    width: 100%; 
+  }
 }
 
 @keyframes slideRight {
@@ -43,3 +39,4 @@
     transform: rotate(360deg);
   }
 }
+
