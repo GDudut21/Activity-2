@@ -226,6 +226,10 @@ h3 {
 
 
 /* SLIDER - TITLE - MAIN */
+<<<<<<< Test-Branch-Guatato
+=======
+/* ROLES */
+
 #roles{
   background-color: #f9f9f9;
 }
@@ -242,6 +246,8 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
+>>>>>>> main
 
 h2 {
   display: block;
