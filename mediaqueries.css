@@ -14,6 +14,12 @@
   }
 }
 
+@media screen and (max-width: 805px){
+.slider__title .slider__title__row .slider__heading h2 {
+    font-size: calc(40px + 3.03vw);
+  }
+}
+
 @keyframes slideRight {
   0% {
     transform: translateX(100%);
@@ -39,6 +45,167 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+@media screen and (max-width: 1376px) {
+
+  /* slider - image */
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image {
+    max-height: 600px;
+  }
+
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image
+    img {
+    max-height: 600px;
+  }
+}
+
+@media screen and (max-width: 1243px) {
+
+  .slider__container {
+    display: flex;
+    justify-content: center;
+  }
+  .slider__container .slider__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__left__wrapper {
+    transform: translateY(0);
+  }
+  .slider__left__wrapper .slider__video.active {
+    display: none;
+  }
+
+  .slider__container .slider__row .slider__right__wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image
+    img {
+    max-height: 550px;
+  }
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image {
+    max-height: 560px;
+  }
+  .slider__container .slider__row .slider__right__wrapper {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .slider__title .slider__title__row .slider__heading h2 {
+    font-size: calc(40px + 3.03vw);
+  }
+  .slider__title .slider__title__row .slider__heading h3 {
+    font-size: 1.3rem;
+  }
+  .slider__title .slider__title__row .slider__title__text {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .slider__left__wrapper .slider__navigation__col {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 300px;
+  }
+  .slider__left__wrapper .slider__navigation__col::-webkit-scrollbar {
+    width: 0;
+  }
+  .slider__left__wrapper
+    .slider__navigation__col
+    .slider__navigation
+    .navigation__col.active
+    .navigation_icon {
+    transform: scale(1);
+  }
+  .slider__container .slider__row .slider__right__wrapper {
+    margin: 0;
+  }
+  .slider__container .slider__row .slider__right__wrapper .slider__right__col {
+    margin: 0 auto;
+  }
+  .slider__container .slider__row .slider__right__wrapper {
+    padding: 0;
+  }
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image
+    img {
+    max-height: 450px;
+  }
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image {
+    max-height: 450px;
+    width: 450px;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+  .slider__title__button {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__title__button .discover-btn {
+    margin: 0 0 10px 0;
+  }
+  .slider__title__button .play-n-btn {
+    margin: 0;
+  }
+  .slider__title .slider__title__row .slider__title__text {
+    font-size: 12px;
+    padding: 0 30px;
+  }
+
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image {
+    max-height: 350px;
+    max-width: 350px;
+  }
+  .slider__container
+    .slider__row
+    .slider__right__wrapper
+    .slider__right__col
+    .slider__right__image
+    img {
+    max-height: 350px;
+  }
+}
+
+
+
 
 
 <<<<<<< Test-Branch-Guatato
