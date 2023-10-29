@@ -791,35 +791,36 @@ img {
 }
 
 .wrapper{
-   display: flex;
-   position: absolute;
-   top: 520%;
-   left:7%;
+  display: flex;
+  position: absolute;
+  top: 650%;
+  left:7%;
 
 }
 
 .wrapper-2{
-  display: flex;
-   position: absolute;
-   top: 520%;
-   left:55%;
+ display: flex;
+  position: absolute;
+  top: 650%;
+  left:55%;
 }
 
 .wrapper-3{
-  display: flex;
-  position: absolute;
-  top: 590%;
-  left: 6%;
+ display: flex;
+ position: absolute;
+ top: 720%;
+ left: 6%;
 
 }
 
 .wrapper-4{
-  display: flex;
-  position: absolute;
-  top: 590%;
-  left: 55%;
+ display: flex;
+ position: absolute;
+ top: 720%;
+ left: 55%;
 
 }
+
 
 .card{
   width: 300px;
