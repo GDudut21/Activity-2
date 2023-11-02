@@ -8,21 +8,39 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="web-nav">
+    <nav class="web-nav">
         <div class="logo">
-            <img src="/Assets/lol_logo.png" class="logo-image">
+          <img src="/Assets/lol_logo.png" class="logo-image">
         </div>
-        <ul class="menu-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#champions">Champions</a></li>
-            <li><a href="#roles">Roles</a></li>
-            <li><a href="#items">Items</a></li>
-            <li><a href="#maps">Maps</a></li>
-            <li><a href="#guides">Guides</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#about">About</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#champions">Champions</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#items">Items</a></li>
+          <li><a href="#maps">Maps</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
     </nav>
+      <nav class="hamburger-nav">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <ul class="menu-links"  >
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#champions" onclick="toggleMenu()">Champions</a></li>
+          <li><a href="#roles" onclick="toggleMenu()">Roles</a></li>
+          <li><a href="#items" onclick="toggleMenu()">Items</a></li>
+          <li><a href="#maps" onclick="toggleMenu()">Maps</a></li>
+          <li><a href="#guides" onclick="toggleMenu()">Guides</a></li>
+          <li><a href="#community" onclick="toggleMenu()">Community</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        </ul>
+      </nav>
     <div class="container">
         <section id="home"> 
             <div class="web__title">
