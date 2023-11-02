@@ -902,7 +902,10 @@ img {
 
 .hamburger-menu {
   position: relative;
+  padding: 15px;
   display: inline-block;
+  border-radius: 15px;
+  background-color: rgba(57, 57, 57, 0.8);
 }
 
 .hamburger-icon {

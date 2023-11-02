@@ -13,7 +13,7 @@
     width: 100%;
   }
   .hamburger-nav {
-    display: flex;
+    display: none;
   }
 }
 
