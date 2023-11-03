@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +8,37 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="web-nav">
+    <nav class="web-nav">
         <div class="logo">
-            <img src="/Assets/lol_logo.png" class="logo-image">
+          <img src="/Assets/lol_logo.png" class="logo-image">
         </div>
-        <ul class="menu-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#champions">Champions</a></li>
-            <li><a href="#roles">Roles</a></li>
-            <li><a href="#items">Items</a></li>
-            <li><a href="#maps">Maps</a></li>
-            <li><a href="#guides">Guides</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#about">About</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#champions">Champions</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#items">Items</a></li>
+          <li><a href="#maps">Maps</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
     </nav>
+      <nav class="hamburger-nav">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <ul class="menu-links"  >
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#champions" onclick="toggleMenu()">Champions</a></li>
+          <li><a href="#roles" onclick="toggleMenu()">Roles</a></li>
+          <li><a href="#items" onclick="toggleMenu()">Items</a></li>
+          <li><a href="#maps" onclick="toggleMenu()">Maps</a></li>
+          <li><a href="#community" onclick="toggleMenu()">Community</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        </ul>
+      </nav>
     <div class="container">
         <section id="home"> 
             <div class="web__title">
@@ -46,7 +57,10 @@
                 <img src="/Assets/sktworlds.jpg" alt="Image 2">
                 <img src="Assets/lol image 1.jpg" alt="Image 3">
                 <img src="Assets/worlds-championship.png" alt="Image 4">
+                <video autoplay loop muted src="Assets/leagueVideo.webm"> </video>
+                <video autoplay loop muted src="Assets/t1.webm"> </video>
             </div>
+            
         </section>
     </div>
     
@@ -86,7 +100,7 @@
             <div class="image-container">
                 <img src="/Assets/Master Yi.png" alt="Image 5">
                 <div class="image-description">
-                    <h3>Champion Name: Master Yi</h3><h4>Master Yi</h4>
+                    <h3>Champion Name:</h3><h4>Master Yi</h4>
                     <p>Master Yi, the Wuju Bladesman, is a skilled and disciplined martial artist</p>
                     </div>
                 </div>
@@ -109,7 +123,7 @@
                 <p>Whether you like to dive straight into the fray, support your teammates, or <br> something in between, there’s a spot for you on the Rift.</p>
             </div>
             <div class="slider__title__button">
-                <a class="discover-btn" href="#champions">DISCOVER MORE CHAMPIONS</a>
+                <a class="discover-btn" href="#roles">DISCOVER ROLES</a>
             </div>
         </div>
     </div>
@@ -330,204 +344,3484 @@
             </div>
         </div>
     </div>
-<div class="container">
+<div class="container_items">
     <div class="directory-items-container">
         <div class="directory-items-section">
             <div class="items-header">
-                Starter Items
+                <h3>Starter Items</h3>
             </div>
             <div class="items-container">
-                <a href="/lol/items/bloodletters-curse">
-                  <img class="items_pic_small items_border_normal_small" src="./Assets/item1.webp" alt="">
-                </a>
-                <a href="/lol/items/cappa-juice">
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item1.webp" alt="">
+                    <div class="item-description">
+                        <h3>Bloodletter's Curse</h3><h5>STATS:</h5>
+                        <p>
+                            +70 
+                            Ability Power <br>
+                            +30 
+                            Armor <br>
+                            +30 
+                            Magic Resist <br>
+                            +15 
+                            Ability Haste <br>
+                            Cost: 
+                              300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item2.webp" alt="">
-                </a>
-                <a href="/lol/items/cull">
+                    <div class="item-description">
+                        <h3>Cappa Juice</h3><h5>STATS:</h5>
+                        <p>
+                            Passive: Unique - Consume: This juice does nothing. <br>
+                            Cost: 
+                              700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item3.webp" alt="">
-                </a>
-                <a href="/lol/items/dark-seal">
+                    <div class="item-description">
+                        <h3>Cull</h3><h5>STATS:</h5>
+                        <p>
+                            +7 
+                            Attack Damage <br>
+                            Passive:
+                            Unique - Reap: Killing a lane minion grants 1 additional gold. Killing 100 lane minions will grant 350 gold.<br>
+                            Cost: 
+                              450g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item4.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-blade">
+                    <div class="item-description">
+                        <h3>Dark Seal</h3><h5>STATS:</h5>
+                        <p>+15 
+                            Ability Power<br>
+                            +50 
+                            Health<br>
+                            Passive:
+                            Unique - Glory: Gain 2 stacks for a champion kill or 1 stack for an assist.
+                            Unique - Dread: Grants 4 Ability Power per stack of Glory.<br>
+                            Cost: 
+                            350g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item5.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-ring">
+                    <div class="item-description">
+                        <h3>Doran's Blade</h3><h5>STATS:</h5>
+                        <p>
+                            +10 
+                            Attack Damage <br>
+                            +100 
+                            Health <br>
+                            Passive:
+                            Unique - Warmonger: Gain Omnivamp. <br>
+                            Cost: 
+                              450g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item6.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-shield">
+                    <div class="item-description">
+                        <h3>Doran's Ring</h3><h5>STATS:</h5>
+                        <p>
+                            +18 
+                            Ability Power <br>
+                            +90 
+                            Health <br>
+                            Passive:
+                            Unique - Focus: Attacks deal additional damage to minions.
+                            Unique - Drain: Restore Mana every second. Damaging an enemy champion increases this amount. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item7.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-amulet">
+                    <div class="item-description">
+                        <h3>Doran's Shield</h3><h5>STATS:</h5>
+                        <p>
+                            +110 
+                            Health <br>
+                            Passive:
+                            Unique - Recovery: Restores Health over time. <br>
+                            Unique - Endure: Restores Health after taking damage from a champion, or any jungle monster. <br>
+                            Cost: 
+                              450g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item8.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-blade">
+                    <div class="item-description">
+                        <h3>Guardian's Amulet</h3><h5>STATS:</h5>
+                        <p>
+                            +20% 
+                            Heal and Shield Power
+                             <br>
+                             +20 
+                             Ability Power<br>
+                             +25 
+                             Ability Haste <br>
+                             Passive:
+                             Unique - Recovery: Restores 10 Mana every 5 seconds. If you can't gain mana, restores 3 Health instead.<br>
+                            Cost: 
+                              1000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item9.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-hammer">
+                    <div class="item-description">
+                        <h3>Guardian's Blade</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage <br>
+                            +150 
+                            Health <br>
+                            +15 
+                            Ability Haste <br>
+                            Cost: 
+                              950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item10.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-horn">
+                    <div class="item-description">
+                        <h3>Guardian's Hammer</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Attack Damage <br>
+                            +150 
+                            Health <br>
+                            +7% 
+                            Life Steal <br>
+                            Passive:
+                            Unique - Legendary: This item counts as a Legendary item. <br>
+                            Cost: 
+                              950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item11.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-orb">
+                    <div class="item-description">
+                        <h3>Guardian's Horn</h3><h5>STATS:</h5>
+                        <p>
+                            +150 
+                            Health <br>
+                            Passive:
+                            Unique - Recovery: Restores Health over time.
+                            Unique - Undaunted: Blocks damage from attacks and spells from champions.
+                            Unique - Legendary: This item counts as a Legendary item. <br>
+                            Cost: 
+                              950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item12.webp" alt="">
-                </a>
-                <a href="/lol/items/relic-shield">
+                    <div class="item-description">
+                        <h3>Guardian's Orb</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Ability Power <br>
+                            +150 
+                            Health <br>
+                            Passive:
+                            Unique - Recovery: Restores Mana over time. If you can't gain mana, restores Health instead.
+                            Unique - Legendary: This item counts as a Legendary item. <br>
+                            Cost: 
+                              950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item13.webp" alt="">
-                </a>
-                <a href="/lol/items/scorchclaw-pup">
+                    <div class="item-description">
+                        <h3>Relic Shield</h3><h5>STATS:</h5>
+                        <p>
+                            +7 
+                            Ability Power <br>
+                            +50 
+                            Health <br>
+                            +50% 
+                            Base Health Regen <br>
+                            +2 
+                            Gold Per 10 Seconds <br>
+                            Unique - Quest: Earn 500 gold from this item to transform it into Targon's Buckler, gaining Active: - Warding. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item14.webp" alt="">
-                </a>
-                <a href="/lol/items/spectral-sickle">
+                    <div class="item-description">
+                        <h3>Scorchclaw Pup</h3><h5>STATS:</h5>
+                        <p>
+                            Passive:
+                            Unique - Jungle Companions: Summon an allied monster to assist you in the jungle.
+                            Unique - Scorchclaw's Slash: When fully grown your companion periodically imbues your next damaging effect to Slow and damage enemy champions.<br>
+                            Cost: 
+                              450g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item15.webp" alt="">
-                </a>
-                <a href="/lol/items/spellthiefs-edge">
+                    <div class="item-description">
+                        <h3>Spectral Sickle</h3><h5>STATS:</h5>
+                        <p>
+                            +6 
+                            Attack Damage <br>
+                            +25 
+                            Health <br>
+                            +25% 
+                            Base Mana Regen <br>
+                            +2 
+                            Gold Per 10 Seconds<br>
+                            Passive: 
+                            Unique - Quest: Earn 500 gold to transform it into Harrowing Crescent, gaining Active: - Warding. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item16.webp" alt="">
-                </a>
-                <a href="/lol/items/steel-shoulderguards">
+                    <div class="item-description">
+                        <h3>Spellthief's Edge</h3><h5>STATS:</h5>
+                        <p>
+                            +10 
+                            Ability Power <br>
+                            +25 
+                            Health <br>
+                            +25% 
+                            Base Mana Regen <br>
+                            +2 
+                            Gold Per 10 Seconds <br>
+                            Passive:
+                            Unique - Quest: Earn 500 gold from this item to transform it into Frostfang, gaining Active: - Warding. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item17.webp" alt="">
-                </a>
-                <a href="/lol/items/tear-of-the-goddess">
+                    <div class="item-description">
+                        <h3>Steel Shoulderguards</h3><h5>STATS:</h5>
+                        <p>
+                            +4 
+                            Attack Damage <br>
+                            +50 
+                            Health<br>
+                            +50% 
+                            Base Health Regen <br>
+                            +2 
+                            Gold Per 10 Seconds <br>
+                            Passive:
+                            Unique - Quest: Earn 500 gold from this item to transform it into Frostfang, gaining Active: - Warding. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
                     <img class="items_pic_small items_border_normal_small" src="./Assets/item18.webp" alt="">
-                </a>
+                    <div class="item-description">
+                        <h3>Tear of the Goddess</h3><h5>STATS:</h5>
+                        <p>
+                            +240 
+                            Mana <br>
+                            Passive:
+                            Unique - Focus: Attacks deal additional physical damage to Minions. <br>
+                            Unique - Mana Charge: Hit an Ability to consume a charge and gain 3 bonus <br> Mana, doubled vs. champions. <br>Max Mana gain: 360. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container_items">
     <div class="directory-items-container">
         <div class="directory-items-section">
             <div class="items-header">
-                Starter Items
+                <h3>Potions</h3>
             </div>
             <div class="items-container">
-                <a href="/lol/items/bloodletters-curse">
-                  <img class="items_pic_small items_border_normal_small" src="./Assets/item1.webp" alt="">
-                </a>
-                <a href="/lol/items/cappa-juice">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item2.webp" alt="">
-                </a>
-                <a href="/lol/items/cull">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item3.webp" alt="">
-                </a>
-                <a href="/lol/items/dark-seal">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item4.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-blade">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item5.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-ring">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item6.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-shield">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item7.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-amulet">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item8.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-blade">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item9.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-hammer">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item10.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-horn">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item11.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-orb">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item12.webp" alt="">
-                </a>
-                <a href="/lol/items/relic-shield">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item13.webp" alt="">
-                </a>
-                <a href="/lol/items/scorchclaw-pup">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item14.webp" alt="">
-                </a>
-                <a href="/lol/items/spectral-sickle">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item15.webp" alt="">
-                </a>
-                <a href="/lol/items/spellthiefs-edge">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item16.webp" alt="">
-                </a>
-                <a href="/lol/items/steel-shoulderguards">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item17.webp" alt="">
-                </a>
-                <a href="/lol/items/tear-of-the-goddess">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item18.webp" alt="">
-                </a>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item19.webp" alt="">
+                    <div class="item-description">
+                        <h3>Corrupting Potion</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active::                         
+                            Unique - Consume: Spend a charge to heal 100 Health and 75 Mana over 12 seconds. Damaging Abilities and Attacks burn enemy champions for 15 (20 if Manaless) magic damage over 3 seconds. Up to 3 charges, refilled at the shop.<br>
+                            Cost: 
+                              500g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item20.webp" alt="">
+                    <div class="item-description">
+                        <h3>Health Potion</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Consume: Drink the potion to restore 120 Health over 15 seconds. <br>
+                            Cost: 
+                              50g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item21.webp" alt="">
+                    <div class="item-description">
+                        <h3>Refillable Potion</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Consume: Consumes a charge to restore 100 Health over 12 seconds. Holds up to 2 charges and refills upon visiting the shop.<br>
+                            Cost: 
+                              150g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item23.webp" alt="">
+                    <div class="item-description">
+                        <h3>Total Biscuit of Everlasting Will</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Consume: Eat the biscuit to restore 8% missing Health and Mana over 5 seconds. Consuming or selling a biscuit permanently grants 40 maximum Mana. <br>
+                            Cost: 
+                              Attainable through runes.
+                        </p>
+                    </div>
+                </div>    
             </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container_items">
     <div class="directory-items-container">
         <div class="directory-items-section">
             <div class="items-header">
-                Starter Items
+                <h3>Trinkets/Wards</h3>
             </div>
             <div class="items-container">
-                <a href="/lol/items/bloodletters-curse">
-                  <img class="items_pic_small items_border_normal_small" src="./Assets/item1.webp" alt="">
-                </a>
-                <a href="/lol/items/cappa-juice">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item2.webp" alt="">
-                </a>
-                <a href="/lol/items/cull">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item3.webp" alt="">
-                </a>
-                <a href="/lol/items/dark-seal">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item4.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-blade">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item5.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-ring">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item6.webp" alt="">
-                </a>
-                <a href="/lol/items/dorans-shield">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item7.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-amulet">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item8.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-blade">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item9.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-hammer">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item10.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-horn">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item11.webp" alt="">
-                </a>
-                <a href="/lol/items/guardians-orb">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item12.webp" alt="">
-                </a>
-                <a href="/lol/items/relic-shield">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item13.webp" alt="">
-                </a>
-                <a href="/lol/items/scorchclaw-pup">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item14.webp" alt="">
-                </a>
-                <a href="/lol/items/spectral-sickle">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item15.webp" alt="">
-                </a>
-                <a href="/lol/items/spellthiefs-edge">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item16.webp" alt="">
-                </a>
-                <a href="/lol/items/steel-shoulderguards">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item17.webp" alt="">
-                </a>
-                <a href="/lol/items/tear-of-the-goddess">
-                    <img class="items_pic_small items_border_normal_small" src="./Assets/item18.webp" alt="">
-                </a>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item24.webp" alt="">
+                    <div class="item-description">
+                        <h3>Control Ward</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Consume: Places a powerful Control Ward that grants vision of the surrounding area. This device will also reveal Invisible traps, reveal Camouflaged enemies, and reveal (and disable) enemy Stealth Wards. <br>
+                            Cost: 
+                              75g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item25.webp" alt="">
+                    <div class="item-description">
+                        <h3>Farsight Alteration</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Trinket: Places a visible and fragile Ward up to 4000 units away. <br>
+                            Cost: 
+                              0g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item26.webp" alt="">
+                    <div class="item-description">
+                        <h3>Oracle Lens</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Trinket: Scans around you, warning against hidden enemy units, revealing invisible traps and revealing (and temporarily disabling) enemy Stealth Wards. Has 2 recharges.<br>
+                            Cost: 
+                              0g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item27.webp" alt="">
+                    <div class="item-description">
+                        <h3>Stealth Ward</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active:
+                            Unique - Trinket: Places a Stealth Ward on the ground that is Invisible to enemies but grants your team vision of the surrounding area. Stores up to 2 Stealth Wards. <br>
+                            Cost: 
+                              0g
+                        </p>
+                    </div>
+                </div>    
             </div>
         </div>
     </div>
 </div>
+<div class="container_items">
+    <div class="directory-items-container">
+        <div class="directory-items-section">
+            <div class="items-header">
+                <h3>Boots</h3>
+            </div>
+            <div class="items-container">
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item28.webp" alt="">
+                    <div class="item-description">
+                        <h3>Boots</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Move Speed
+                             <br>
+                            Cost: 
+                              300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item29.webp" alt="">
+                    <div class="item-description">
+                        <h3>Berserker's Greaves</h3><h5>STATS:</h5>
+                        <p>
+                            +35% 
+                            Attack Speed <br>
+                            +45 
+                            Move Speed <br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item30.webp" alt="">
+                    <div class="item-description">
+                        <h3>Boots of Swiftness</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Move Speed<br>
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item31.webp" alt="">
+                    <div class="item-description">
+                        <h3>Ionian Boots of Lucidity</h3><h5>STATS:</h5>
+                        <p>+20 
+                            Ability Haster<br>
+                            +45 
+                            Move Speed<br>
+                            Cost: 
+                            950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item32.webp" alt="">
+                    <div class="item-description">
+                        <h3>Mercury's Treads</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Magic Resist <br>
+                            +45 
+                            Move Speed<br>
+                            +30% 
+                            Tenacity<br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item33.webp" alt="">
+                    <div class="item-description">
+                        <h3>Plated Steelcaps</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Armor <br>
+                            +45 
+                            Move Speed <br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item34.webp" alt="">
+                    <div class="item-description">
+                        <h3>Sorcerer's Shoes</h3><h5>STATS:</h5>
+                        <p>
+                            +18 
+                            Magic Penetration <br>
+                            +45 
+                            Move Speed<br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item35.webp" alt="">
+                    <div class="item-description">
+                        <h3>Mobility Boots</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Move Speed
+                             <br>
+                            When out of the combat for atleast 5 seconds, increase this item's effect to 120<br>
+                            Cost: 
+                              1000g
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_items">
+    <div class="directory-items-container">
+        <div class="directory-items-section">
+            <div class="items-header">
+                <h3>Basic Items</h3>
+            </div>
+            <div class="items-container">
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item36.webp" alt="">
+                    <div class="item-description">
+                        <h3>Amplifying Tome</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Ability Power <br>
+                            Cost: 
+                              435g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item37.webp" alt="">
+                    <div class="item-description">
+                        <h3>B. F. Sword</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage<br>
+                            Cost: 
+                              1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item38.webp" alt="">
+                    <div class="item-description">
+                        <h3>Blasting Wand</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Ability Power<br>
+                            Cost: 
+                              850g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item39.webp" alt="">
+                    <div class="item-description">
+                        <h3>Cloak of Agility</h3><h5>STATS:</h5>
+                        <p>+15% 
+                            Critical Strike Chance<br>
+                            Cost: 
+                            600g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item41.webp" alt="">
+                    <div class="item-description">
+                        <h3>Cloth Armor</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Armor<br>
+                            Cost: 
+                              300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item43.webp" alt="">
+                    <div class="item-description">
+                        <h3>Faerie Charm</h3><h5>STATS:</h5>
+                        <p>
+                            +50% 
+                            Base Mana Regen <br>
+                            Cost: 
+                              250g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item44.webp" alt="">
+                    <div class="item-description">
+                        <h3>Long Sword</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Attack Damage
+                             <br>
+                            Cost: 
+                              350g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item45.webp" alt="">
+                    <div class="item-description">
+                        <h3>Needlessly Large Rod</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Ability Power<br>
+                            Cost: 
+                              1250g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item46.webp" alt="">
+                    <div class="item-description">
+                        <h3>Null-Magic Mantle</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Magic Resist<br>
+                            Cost: 
+                              450g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item47.webp" alt="">
+                    <div class="item-description">
+                        <h3>Pickaxe</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Attack Damage <br>
+                            Cost: 
+                              875g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item48.webp" alt="">
+                    <div class="item-description">
+                        <h3>Rejuvenation Bead</h3><h5>STATS:</h5>
+                        <p>
+                            +100% 
+                            Base Health Regen <br>
+                            Cost: 
+                              300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item49.webp" alt="">
+                    <div class="item-description">
+                        <h3>Ruby Crystal</h3><h5>STATS:</h5>
+                        <p>
+                            +150 
+                            Health <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item50.webp" alt="">
+                    <div class="item-description">
+                        <h3>Sapphire Crystal</h3><h5>STATS:</h5>
+                        <p>
+                            +250 
+                            Mana<br>
+                            Cost: 
+                              350g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item51.webp" alt="">
+                    <div class="item-description">
+                        <h3>Sheen</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Passive: 
+                            Unique - Spellblade: After using an Ability, your next Attack is enhanced with additional damage. <br>
+                            Cost: 
+                              700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item52.webp" alt="">
+                    <div class="item-description">
+                        <h3>Stopwatch</h3><h5>DESCRIPTION:</h5>
+                        <p>
+                            Active::
+                            Unique - Stasis: Use one time only to become Invulnerable and Untargetable for 2.5 seconds, but are prevented from taking any other actions during this time (transforms into a Broken Stopwatch). <br>
+                            Cost: 
+                              750g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item42.webp" alt="">
+                    <div class="item-description">
+                        <h3>Dagger</h3><h5>STATS:</h5>
+                        <p>
+                            +12% 
+                            Attack Speed <br>
+                            Cost: 
+                              300g
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_items">
+    <div class="directory-items-container">
+        <div class="directory-items-section">
+            <div class="items-header">
+                <h3>Epic Items</h3>
+            </div>
+            <div class="items-container">
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item53.webp" alt="">
+                    <div class="item-description">
+                        <h3>Aegis of the Legion</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Armor <br>
+                            +30 
+                            Magic Resist <br>
+                            +10 
+                            Ability Haste <br>
+                            Cost: 
+                              1200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item54.webp" alt="">
+                    <div class="item-description">
+                        <h3>Aether Wisp</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Ability Power<br>
+                            Cost: 
+                              850g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item55.webp" alt="">
+                    <div class="item-description">
+                        <h3>Bami's Cinder</h3><h5>STATS:</h5>
+                        <p>
+                            +300 
+                            Health <br>
+                            Passive:
+                            Unique - Immolate : Taking or dealing damage causes you to begin dealing magic damage per second to nearby enemies (increased against minions and monsters).<br>
+                            Cost: 
+                              1000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item56.webp" alt="">
+                    <div class="item-description">
+                        <h3>Bandleglass Mirror</h3><h5>STATS:</h5>
+                        <p>+20 
+                            Ability Power<br>
+                            +10 
+                            Ability Haste<br>
+                            +50% 
+                            Base Mana Regen<br>
+                            Cost: 
+                            950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item57.webp" alt="">
+                    <div class="item-description">
+                        <h3>Blighting Jewel</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Ability Power <br>
+                            +13% 
+                            Magic Penetration <br>
+                            Passive:
+                            Unique - Warmonger: Gain Omnivamp. <br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item58.webp" alt="">
+                    <div class="item-description">
+                        <h3>Bramble Vest</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Armor <br>
+                             Passive:
+                             Unique - Thorns: When struck by an Attack, deal damage to the attacker and apply 40% Grievous Wounds if they are a champion. <br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item59.webp" alt="">
+                    <div class="item-description">
+                        <h3>Catalyst of Aeons</h3><h5>STATS:</h5>
+                        <p>
+                            +300 
+                            Health <br>
+                            +300 
+                            Mana <br>
+                            Passive:
+                            Unique - Eternity: Restore Mana equal to 7% of premitigation damage taken from champions, and Health equal to 25% of Mana spent, up to 20 Health per cast, per second. <br>
+                            Cost: 
+                              1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item60.webp" alt="">
+                    <div class="item-description">
+                        <h3>Caulfield's Warhammer</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Attack Damage
+                             <br>
+                             +10 
+                             Ability Haster<br>
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item61.webp" alt="">
+                    <div class="item-description">
+                        <h3>Chain Vest</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Armor<br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item62.webp" alt="">
+                    <div class="item-description">
+                        <h3>Chalice of Blessing</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            Health <br>
+                            +50% 
+                            Base Mana Regen <br>
+                            Passive:
+                            Unique - Harmony: Gain 25% Base Health Regeneration for every additional 25% Base Mana Regeneration. <br>
+                            Cost: 
+                              950g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item63.webp" alt="">
+                    <div class="item-description">
+                        <h3>Crystalline Bracer</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            Health<br>
+                            +100% 
+                            Base Health Regen <br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item64.webp" alt="">
+                    <div class="item-description">
+                        <h3>Executioner's Calling</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Attack Damage <br>
+                            Passive:
+                            Unique - Rend: Dealing physical damage applies 40% Grievous Wounds to champions for 3 seconds. <br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item65.webp" alt="">
+                    <div class="item-description">
+                        <h3>Fiendish Codex</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Ability Power <br>
+                            +10 
+                            Ability Haste <br>
+                           <br>
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item66.webp" alt="">
+                    <div class="item-description">
+                        <h3>Forbidden Idol</h3><h5>STATS:</h5>
+                        <p>
+                            +50% 
+                            Base Mana Regen<br>
+                            +8% 
+                        Heal and Shield Power<br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item67.webp" alt="">
+                    <div class="item-description">
+                        <h3>Frostfang</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Ability Power <br>
+                            +70 
+                            Health
+                             <br>
+                             +50% 
+                             Base Mana Regen<br>
+                             +3 
+                             Gold Per 10 Seconds<br>
+                            Passive: 
+                            Unique - Quest: Earn 500 gold to transform it into Harrowing Crescent, gaining Active: - Warding. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item68.webp" alt="">
+                    <div class="item-description">
+                        <h3>Giant's Belt</h3><h5>STATS:</h5>
+                        <p>
+                            +350 
+                            Health <br>
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item69.webp" alt="">
+                    <div class="item-description">
+                        <h3>Glacial Buckler</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Armor <br>
+                            +250 
+                            Mana<br>
+                            +10 
+                            Ability Haste <br>
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item70.webp" alt="">
+                    <div class="item-description">
+                        <h3>Harrowing Crescent</h3><h5>STATS:</h5>
+                        <p>
+                            +10 
+                            Attack Damage <br>
+                            +60 
+                            Health<br>
+                            +50% 
+                            Base Mana Regen<br>
+                            +3 
+                            Gold Per 10 Seconds<br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item71.webp" alt="">
+                    <div class="item-description">
+                        <h3>Hearthbound Axe</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Attack Damage <br>
+                            +15% 
+                            Attack Speed <br>
+                            Passive:
+                            Unique - Nimble: Attacking a unit grants Move Speed. <br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item72.webp" alt="">
+                    <div class="item-description">
+                        <h3>Hexdrinker</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Attack Damage<br>
+                            +35 
+Magic Resist<br>
+Passive:
+Unique - Lifeline: Upon taking magic damage that would reduce Health below 30%, gain a magic damage Shield.<br>
+                            Cost: 
+                              1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item96.webp" alt="">
+                    <div class="item-description">
+                        <h3>Zeal</h3><h5>STATS:</h5>
+                        <p>
+                            +15% 
+                            Attack Speed <br>
+                            +15% 
+                    Critical Strike Chance <br>
+                    +5% 
+                    Move Speed<br>
+                            Cost: 
+                             1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item74.webp" alt="">
+                    <div class="item-description">
+                        <h3>Hextech Alternator</h3><h5>STATS:</h5>
+                        <p>+25 
+                            Ability Power<br>
+                            +150 
+                            Health<br>
+                            Passive:
+Unique - Revved: Damaging a champion deals additional damage.<br>
+                            Cost: 
+                            1050g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item75.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Ironspike Whip</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage <br>
+                            Active:
+                            Unique - Crescent: Deal damage to nearby enemies. <br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item76.webp" alt="">
+                    <div class="item-description">
+                        <h3>Kindlegem</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            Health <br>
+                            +10 
+                            Ability Haste <br>
+                             
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item77.webp" alt="">
+                    <div class="item-description">
+                        <h3>Kircheis Shard</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Attack Damage <br>
+                            Passive:
+Unique - Energized: Moving and Attacking will generate an Energized Attack.<br>
+Unique - Jolt: Energized Attacks gain an additional 60 magic damage.<br>
+                            Cost: 
+                              700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item78.webp" alt="">
+                    <div class="item-description">
+                        <h3>Last Whisper</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Attack Damage
+                             <br>
+                             +18% 
+                             Armor Penetration<br>
+                            Cost: 
+                              1450g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item79.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Leeching Leer</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Ability Power <br>
+                            +250 
+                            Health <br>
+                            +5% 
+                            Omnivamp <br>
+                            Cost: 
+                              1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item80.webp" alt="">
+                    <div class="item-description">
+                        <h3>Lost Chapter</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Ability Power <br>
+                            +300 
+                            Mana <br>
+                            +10 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Enlighten: Upon levelling up, restores 20% max Mana over 3 seconds. <br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item81.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Negatron Cloak</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Magic Resist <br>
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item82.webp" alt="">
+                    <div class="item-description">
+                        <h3>Noonquiver</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage <br>
+                            +15% 
+                            Attack Speed<br>
+                            Passive:
+                            Unique - Precision: Attacks deal additional damage to Minions and Monsters. <br>
+                            Cost: 
+                            1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item83.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Oblivion Orb</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Ability Power <br>
+                            Passive:
+Unique - Cursed: Dealing magic damage applies 40% Grievous Wounds to champions for 3 seconds<br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item84.webp" alt="">
+                    <div class="item-description">
+                        <h3>Phage</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Attack Damage<br>
+                            +200 
+                            Health<br>
+                            Passive:
+                            Unique - Sturdy: After you deal physical damage to a champion, restore Health over time.<br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item85.png" alt="">
+                    <div class="item-description">
+                        <h3>Quicksilver Sash</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Magic Resist <br>
+                            Active:
+                            Unique - Quicksilver: Removes all crowd control debuffs (excluding Airborne). <br>
+                            Cost: 
+                              1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item86.webp" alt="">
+                    <div class="item-description">
+                        <h3>Rageknife</h3><h5>STATS:</h5>
+                        <p>
+                            +25% 
+                            Attack Speed <br>
+                            Passive:
+                            Unique - Seething Strike: Basic attacks grant 5% Attack Speed, stacking up to 3 times. <br>
+                            Cost: 
+                              1200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item97.webp" alt="">
+                    <div class="item-description">
+                        <h3>Recurve Bow</h3><h5>STATS:</h5>
+                        <p>
+                            +15% 
+                            Attack Speed<br>
+                            Cost: 
+                              700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item88.webp" alt="">
+                    <div class="item-description">
+                        <h3>Serrated Dirk</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage<br>
+                            Passive:
+                            Unique - Gouge: Gain 10 Lethality.<br>
+                            Cost: 
+                              1100g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item89.webp" alt="">
+                    <div class="item-description">
+                        <h3>Spectre's Cowl</h3><h5>STATS:</h5>
+                        <p>
+                            +250 
+                            Health <br>
+                            +25 
+Magic Resist<br>
+                            Passive:
+                            Unique - Incorporeal: After taking damage from a champion, Regenerate Health. <br>
+                            Cost: 
+                              1250g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item90.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Targon's Buckler</h3><h5>STATS:</h5>
+                        <p>
+                            +10 
+                            Ability Power<br>
+                            +100 
+                            Health<br>
+                            +75% 
+                            Base Health Regen<br>
+                            +3 
+                            Gold Per 10 Seconds<br>
+                            Passive:
+                            Unique - Focus: Attacks deal additional physical damage to Minions. <br>
+                            Unique - Mana Charge: Hit an Ability to consume a charge and gain 3 bonus <br> Mana, doubled vs. champions. <br>Max Mana gain: 360. <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item91.webp" alt="">
+                    <div class="item-description">
+                        <h3>Tiamat</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Attack Damage<br>
+                            Passive:
+                            Unique - Cleave: Attacks deal physical damage to other nearby enemies. Cleave does not trigger on structures.Item performance differs for melee and ranged users.<br>
+                            Cost: 
+                             1200g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item92.webp" alt="">
+                    <div class="item-description">
+                        <h3>Vampiric Scepter</h3><h5>STATS:</h5>
+                        <p>
+                            +15 
+                            Attack Damage<br>
+                            +7% 
+                            Life Steal <br>
 
-    
->>>>>>> main
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item93.webp" alt="">
+                    <div class="item-description">
+                        <h3>Verdant Barrier</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Ability Power<br>
+                            +25 
+                            Magic Resist <br>
+                            Passive:
+                            Unique - Adaptive: Killing a unit grants 0.3 Magic Resist (max 9). <br>
+                            Cost: 
+                              1000g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item94.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Warden's Mail</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Armor <br>
+                            Passive:
+                            Unique - Rock Solid: Reduce incoming damage from Attacks.<br>
+                            Cost: 
+                              1000g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/item95.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Winged Moonplate</h3><h5>STATS:</h5>
+                        <p>
+                            +150 
+                            Health <br>
+                            Unique - Flight: Grants 5% Move Speed.<br>
+                            Cost: 
+                              800g
+                        </p>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_items">
+    <div class="directory-items-container">
+        <div class="directory-items-section">
+            <div class="items-header">
+                <h3>Legendary Items</h3>
+            </div>
+            <div class="items-container">
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items1.webp" alt="">
+                    <div class="item-description">
+                        <h3>Abyssal Mask</h3><h5>STATS:</h5>
+                        <p>
+                            +300 
+                            Health<br>
+                            +60 
+                            Magic Resist<br>
+                            +10 
+                            Ability Haste <br>
+                            Passive:
+Unique - Unmake: Curse nearby enemy champions, reducing their Magic Resist. For each Cursed enemy, gain Magic Resist.<br>
+                            Cost: 
+                              2400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items2.webp" alt="">
+                    <div class="item-description">
+                        <h3>Anathema's Chains</h3><h5>STATS:</h5>
+                        <p>
+                            +650 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            Passive:
+Unique - Vendetta: Take reduced damage from your Nemesis, increasing per Vendetta stack. You gain stacks over time, and reach the maximum number of stacks after 60 seconds.<br>
+                            Cost: 
+                              2500g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items3.webp" alt="">
+                    <div class="item-description">
+                        <h3>Archangel's Staff</h3><h5>STATS:</h5>
+                        <p>
+                            +70 
+                            Ability Power<br>
+                            +500 
+                            Mana<br>
+                            +200 
+                            Health<br>
+                            +10 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Mana Charge: Strike a target with an Ability to consume a charge and gain 3 bonus Mana, doubled if the target is a champion. Grants a maximum of 360 Mana at which point this item transforms into Seraph's Embrace.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items4.webp" alt="">
+                    <div class="item-description">
+                        <h3>Ardent Censer</h3><h5>STATS:</h5>
+                        <p>+20 
+                            +35 
+                            Ability Power<br>
+                            +8% 
+                            Heal and Shield Power<br>
+                            +75% 
+                            Base Mana Regen<br>
+                            +5% 
+                            Move Speed<br>
+                            Passive
+Unique - Sanctify: Healing or Shielding another ally enhances you both, granting Attack Speed and magic damage On-Hit.<br>
+                            Cost: 
+                            2100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items5.webp" alt="">
+                    <div class="item-description">
+                        <h3>Atma's Reckoning</h3><h5>STATS:</h5>
+                        <p>
+                            +25 
+                            Attack Damage<br>
+                            +30 
+                            Armor<br>
+                            +30 
+                            Magic Resist<br>
+                            +10 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Big Hands: While in combat with enemy champions, turrets, or epic monsters, gains 0.5% - 0 (based on seconds in-combat) max health as bonus physical damage.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items6.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Axiom Arc</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +18 
+                            Lethality<br>
+                            +25 
+                            Ability Haste<br>
+                             Passive:
+                             Unique - Flux: Whenever a Champion dies that you recently damaged, refund some of your Ultimate Ability's total cooldown.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items7.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Banshee's Veil</h3><h5>STATS:</h5>
+                        <p>
+                            +80 
+                            Ability Power<br>
+                            +45 
+                            Magic Resist<br>
+                            +10 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Annul: Grants a Spell Shield that blocks the next enemy Ability.<br>
+                            Cost: 
+                              2600g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items8.webp" alt="">
+                    <div class="item-description">
+                        <h3>Black Cleaver</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +400 
+                            Health<br>
+                            +30 
+                            Ability Haste
+                             <br>
+                             Passive:
+                             Unique - Rage: Dealing physical damage to a champion grants Move Speed per stack of Carve on them.<br>
+                             Cost:
+                              3100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items9.webp" alt="">
+                    <div class="item-description">
+                        <h3>Black Mist Scythe</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Attack Damage<br>
+                            +75 
+                            Health<br>
+                            +100% 
+                            Base Mana Regen<br>
+                            +3 
+                            Gold Per 10 Seconds<br>
+                            Active:
+Unique - Ward: Place a Stealth Ward on the ground that is Invisible to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. Active - Ward<br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items10.webp" alt="">
+                    <div class="item-description">
+                        <h3>Blade of The Ruined King</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            +40 
+                            Attack Damage<br>
+                            +25% 
+                            Attack Speed<br>
+                            +8% 
+                            Life Steal <br>
+                            Passive:
+                            Unique - Mist's Edge: Attacks apply physical damage based off of the target's current Health.
+Unique - Siphon: Attacking a champion 3 times deals magic damage and steals Move Speed.Item performance differs for melee and ranged users.<br>
+                            Cost: 
+                              3300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items11.webp" alt="">
+                    <div class="item-description">
+                        <h3>Bloodthirster</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +18% 
+                            Life Steal <br>
+                            Passive:
+Unique - Engorge: While above 70% Health, gain additional Attack Damage.<br>
+                            Cost: 
+                              3400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items12.webp" alt="">
+                    <div class="item-description">
+                        <h3>Bulwark of the Mountain</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Ability Power<br>
+                            +250 
+                            Health<br>
+                            +100% 
+                            Base Health Regen<br>
+                            +3 
+                            Gold Per 10 Seconds <br>
+                            Active:
+                            Unique - Ward: Place a Stealth Ward on the ground that is Invisible to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. Active - Ward<br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items13.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Chempunk Chainsword</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +250 
+                            Health<br>
+                            +25 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Hackshorn: Dealing physical damage applies 40% Grievous Wounds to enemy champions for 3 seconds.<br>
+                            Cost: 
+                              2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items14.webp" alt="">
+                    <div class="item-description">
+                        <h3>Chemtech Putrifier</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Ability Power<br>
+                            +10% 
+                            Heal and Shield Power<br>
+                            +75% 
+                            Base Mana Regen<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+Unique - Puffcap Toxin: Dealing damage applies 40% Grievous Wounds to champions for 3 seconds.<br>
+                            Cost: 
+                              2100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items15.webp" alt="">
+                    <div class="item-description">
+                        <h3>Cosmic Drive</h3><h5>STATS:</h5>
+                        <p>
+                            +100 
+                            Ability Power<br>
+                            +30 
+                            Ability Haste<br>
+                            +5% 
+                            Move Speed
+                             <br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items16.webp" alt="">
+                    <div class="item-description">
+                        <h3>Dead Man's Plate</h3><h5>STATS:</h5>
+                        <p>
+                            +300 
+                            Health <br>
+                            +45 
+                            Armor <br>
+                            +5% 
+                            Move Speed <br>
+                            Cost: 
+                              2900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items17.webp" alt="">
+                    <div class="item-description">
+                        <h3>Death's Dance</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +15 
+                            Ability Haste<br>
+                            +45 
+                            Armor <br>
+                            Passive:
+Unique - Ignore Pain: Damage taken is dealt to you over time instead. <br>
+                            Cost: 
+                              900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items18.webp" alt="">
+                    <div class="item-description">
+                        <h3>Deathfire Grasp</h3><h5>STATS:</h5>
+                        <p>
+                            +120 
+                            Ability Power<br>
+                            +10 
+                            Ability Haste<br>
+                            Active:
+                            Unique - The Silence: Deal magic damage equal to 15% of the Target's Max Health, and then amplify damage they take by 15% for 4 seconds (90s ).<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items19.webp" alt="">
+                    <div class="item-description">
+                        <h3>Demonic Embrace</h3><h5>STATS:</h5>
+                        <p>
+                            +75 
+                            Ability Power<br>
+                            +350 
+                            Health<br>
+                            Passive:
+                            Unique - Azakana's Gaze: Dealing Ability damage burns enemies for max Health magic damage every second. <br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items20.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Edge of Night</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +10 
+                            Lethality<br>
+                            +325 
+                            Health<br>
+Passive:
+Unique - Annul: Gain a Spell Shield that blocks the next enemy Ability.<br>
+                            Cost: 
+                              2900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items21.webp" alt="">
+                    <div class="item-description">
+                        <h3>Essence Reaver</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +20 
+                            Ability Haste <br>
+                            Passive:
+Unique - Spellblade: After using an Ability, your next Attack deals additional damage and restores Mana.<br>
+                            Cost: 
+                             2900g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items22.webp" alt="">
+                    <div class="item-description">
+                        <h3>Fimbulwinter</h3><h5>STATS:</h5>
+                        <p>+400 
+                            Health<br>
+                            +860 
+                            Mana<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Awe: Gain bonus Health based on Mana.<br>
+                            Unique - Everlasting: Immobilizing or Slowing an enemy champion grants a Shield. The Shield is increased if more than one enemy is nearby..<br>
+                            Cost: 
+                            2700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items23.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Force of Nature</h3><h5>STATS:</h5>
+                        <p>
+                            +400 
+                            Health<br>
+                            +60 
+                            Magic Resist<br>
+                            +5% 
+                            Move Speede <br>
+                            Passive:
+                            Unique - Absorb: Taking magic damage from enemy Champions grants a stack of Steadfast. Enemy Immobilizing effects grant additional stacks. <br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items24.webp" alt="">
+                    <div class="item-description">
+                        <h3>Frozen Heart</h3><h5>STATS:</h5>
+                        <p>
+                            +90 
+                            Armor<br>
+                            +400 
+                            Mana<br>
+                            +20 
+                            Ability Haste <br>
+                            Passive
+                            Unique - Winter's Caress: Reduces the Attack Speed of nearby enemies.<br>
+                            Cost: 
+                            2700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items25.webp" alt="">
+                    <div class="item-description">
+                        <h3>Gargoyle Stoneplate</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Armor<br>
+                            +60 
+                            Magic Resist<br>
+                            +15 
+                            Ability Haste <br>
+                            Active:
+                            Unique - Unbreakable: Gain a Shield that decays and grow in size.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items26.webp" alt="">
+                    <div class="item-description">
+                        <h3>Guardian Angel</h3><h5>STATS:</h5>
+                        <p>
+                            +45 
+                            Attack Damage<br>
+                            +40 
+                            Armor<br>
+                            Passive:
+Unique - Saving Grace: Upon taking lethal damage, restores 50% base Health and 30% max Mana after 4 seconds of stasis (300s cooldown).<br>
+                            Cost: 
+                           3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items27.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Hextech Gunblade</h3><h5>STATS:</h5>
+                        <p>
+                            +80 
+                            Ability Power<br>
+                            +40 
+                            Attack Damage<br>
+                            +15% 
+                            Omnivamp <br>
+                            Active:
+Unique - Lightning Bolt: Shocks the target enemy champion, dealing 0 magic damage and slowing them by 40% for 2 seconds (30 second cooldown) <br>
+                            Cost: 
+                            3300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items28.webp" alt="">
+                    <div class="item-description">
+                        <h3>Horizon Focus</h3><h5>STATS:</h5>
+                        <p>
+                            +100 
+                            Ability Power<br>
+                            +150 
+                            Health<br>
+                            +15 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Hypershot: Damaging a champion with a non-targeted Ability at over 700 range or Slowing or Immobilizing them Reveals them and increases their damage taken from you. <br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items29.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                        Hullbreaker</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Attack Damage<br>
+                            +400 
+                            Health<br>
+                            +150% 
+                            Base Health Regen<br>
+                            +5% 
+                            Move Speed <br>
+                            Passive:
+Unique - Boarding Party: While no allied champions are nearby you gain Armor and Magic Resist and Attacks deal increased damage to towers. Nearby large minions gain Armor and Magic Resist and increased damage to towers.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items30.webp" alt="">
+                    <div class="item-description">
+                        <h3>Immortal Shieldbow</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +10% 
+                            Life Steal<br>
+                            Passive:
+                            Unique - Lifeline: When taking damage that would reduce you below 30% Health, gain a Shield. In addition, gain Attack Speed.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items31.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Imperial Mandate</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Ability Power<br>
+                            +200 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            +100% 
+                            Base Mana Regen <br>
+                            Passive:
+                            Unique - Coordinated Fire: Abilities that Slow or Immobilize a champion deal bonus damage and mark them. Ally champion damage detonates the mark, dealing additional damage and granting you both Move Speed.<br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items32.webp" alt="">
+                    <div class="item-description">
+                        <h3>Innervating Locket</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage<br>
+                            +400 
+                            Health<br>
+                            +300 
+                            Mana<br>
+                            +10 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Innervate: After using an ability, restore 3% missing Health and 3% missing Mana over 3 seconds.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items33.webp" alt="">
+                    <div class="item-description">
+                        <h3>Knight's Vow</h3><h5>STATS:</h5>
+                        <p>
+                            +350 
+                            Health<br>
+                            +25 
+                            Armor<br>
+                            +15 
+                            Ability Haste<br>
+                            +125% 
+                            Base Health Regen <br>
+                            Passive:
+                            Unique - Sacrifice: While your Worthy ally is nearby, redirect damage they take to you and heal based on the damage dealt by your Worthy ally to Champions.<br>
+                            Cost: 
+                              1300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items34.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Kraken Slayer</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage <br>
+                            +30% 
+                            Attack Speed <br>
+                            +20% 
+                            Critical Strike Chance <br>
+                            Passive:
+                            Unique - Bring It Down: Every third Attack deals additional physical damage. Repeated triggers on the same target increase the damage dealt. <br>
+                            Cost: 
+                             3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items35.webp" alt="">
+                    <div class="item-description">
+                        <h3>Lich Bane</h3><h5>STATS:</h5>
+                        <p>
+                            +85 
+                            Ability Power<br>
+                            +15 
+                            Ability Haste<br>
+                            +8% 
+                            Move Speed<br>
+                            Passive:
+Unique - Spellblade: After using an Ability, your next Attack is enhanced with additional magic damage.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items36.webp" alt="">
+                    <div class="item-description">
+                        <h3>Lord Dominik's Regards</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +30% 
+                            Armor Penetration<br>
+                            Passive:
+                            Unique - Giant Slayer: Deal bonus damage against champions with greater max Health than you.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items37.webp" alt="">
+                    <div class="item-description">
+                        <h3>Manamune</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Attack Damage<br>
+                            +500 
+                            Mana<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Awe: Gain bonus Attack Damage equal to your max Mana.<br>
+                            Unique - Mana Charge: Strike a target with an Ability or Attack to consume a charge and gain 3 bonus Mana, doubled if the target is a champion. Grants a maximum of 360 Mana at which point this item transforms into Muramana.<br>
+                            Cost: 
+                            2900g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items38.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Maw of Malmortius</h3><h5>STATS:</h5>
+                        <p>
+                            +65 
+                            Attack Damage<br>
+                            +50 
+                            Magic Resist<br>
+                            Passive:
+                            Unique - Lifeline: Upon taking magic damage that would reduce Health below 30%, gain a magic damage Shield. When Lifeline triggers, gain Omnivamp until the end of combat.<br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items39.webp" alt="">
+                    <div class="item-description">
+                        <h3>Mejai's Soulstealer</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Ability Power<br>
+                            +100 
+                            Health<br>
+                            Passive:
+                            Unique - Glory: Gain 4 stacks for a champion kill or 2 stacks for an assist (up to 25 stacks total). Lose 10 stacks on death.<br>
+                            Cost: 
+                             1600g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items40.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Mercurial Scimitar</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +50 
+                            Magic Resist<br>
+                            Active:
+Unique - Quicksilver: Remove all crowd control debuffs and gain Move Speed.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items41.webp" alt="">
+                    <div class="item-description">
+                        <h3>Mikael's Blessing</h3><h5>STATS:</h5>
+                        <p>
+                            +250 
+                            Health<br>
+                            +100% 
+                            Base Mana Regen<br>
+                            +15% 
+                            Heal and Shield Power <br>
+                            Active:
+                            Unique - Purify: Restore Health and Remove all crowd control debuffs (except Knockups and Suppression) from an ally champion. <br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items42.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Morellonomicon</h3><h5>STATS:</h5>
+                        <p>
+                            +90 
+                            Ability Power<br>
+                            +200 
+                            Health<br>
+                            +10 
+                            Magic Penetration <br>
+                            Passive:
+                            Unique - Affliction: Dealing magic damage applies 40% Grievous Wounds to enemy champions for 3 seconds.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>      
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items43.webp" alt="">
+                    <div class="item-description">
+                        <h3>Mortal Reminder</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage<br>
+                            +30% 
+                            Armor Penetration<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            Passive:
+                            Unique - Sepsis: Dealing physical damage applies 40% Grievous Wounds to enemy champions for 3 seconds.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items44.webp" alt="">
+                    <div class="item-description">
+                        <h3>Muramana</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Attack Damage<br>
+                            +860 
+                            Mana<br>
+                            +15 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Awe: Gain bonus Attack Damage based on Mana.<br>
+                            Unique - Shock: Attacks against champions deal additional physical damage.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items45.webp" alt="">
+                    <div class="item-description">
+                        <h3>Nashor's Tooth</h3><h5>STATS:</h5>
+                        <p>
+                            +100 
+                            Ability Power<br>
+                            +50% 
+                            Attack Speed<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Icathian Bite: Attacks apply magic damage On-Hit.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items46.webp" alt="">
+                    <div class="item-description">
+                        <h3>Phantom Dancer</h3><h5>STATS:</h5>
+                        <p>
+                            +20 
+                            Attack Damage<br>
+                            +35% 
+                            Attack Speed<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +7% 
+                            Move Speed <br>
+                            Passive:
+                            Unique - Spectral Waltz: Attacks grant Ghosting and stacking increased Move Speed. In addition, Attacking 4 times causes Spectral Waltz to also grant Attack Speed.<br>
+                            Cost: 
+                             2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items47.webp" alt="">
+                    <div class="item-description">
+                        <h3>Prowler's Claw</h3><h5>STATS:</h5>
+                        <p>+55 
+                            Attack Damage<br>
+                            +18 
+                            Lethality<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Sandstrike: After dashing, blinking, or exiting Stealth, your next Attack on a champion deals an additional physical damage. If dealt by a Melee champion, this Attack also Slows the target.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items48.webp" alt="">
+                    <div class="item-description">
+                        <h3>Rabadon's Deathcap</h3><h5>STATS:</h5>
+                        <p>
+                            +120 
+                            Ability Power<br>
+                            Passive:
+                            Unique - Magical Opus: Increases your total Ability Power by 40%.<br>
+                            Cost: 
+                            3600g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items49.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Randuin's Omen</h3><h5>STATS:</h5>
+                        <p>
+                            +400 
+                            Health<br>
+                            +60 
+                            Armor<br>
+                            Active:
+Unique - Humility: Slow nearby enemies.<br>
+                             Passive:
+                             Unique - Rock Solid: Reduce incoming damage from Attacks.<br>
+                            Cost: 
+                            2700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items50.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Rapid Firecannon</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage<br>
+                            +15% 
+                            Attack Speed<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +7% 
+                            Move Speed<br>
+                            Passive:
+                            Unique - Energized: Moving and Attacking will generate an Energized Attack.<br>
+Unique - Sharpshooter: Your Energized Attack applies bonus damage. In addition, Energized attacks gain Attack Range.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items51.webp" alt="">
+                    <div class="item-description">
+                        <h3>Ravenous Hydra</h3><h5>STATS:</h5>
+                        <p>
+                            +65 
+                            Attack Damage<br>
+                            +25 
+                            Ability Haste<br>
+                            +10% 
+                            Life Steal
+                             <br>
+                             Passive:
+                             Unique - Cleave: Attacks and Abilities deal physical damage to other nearby enemies.<br>
+                             Cost:
+                              3400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items52.webp" alt="">
+                    <div class="item-description">
+                        <h3>Redemption</h3><h5>STATS:</h5>
+                        <p>
+                            +250 
+                            Health<br>
+                            +100% 
+                            Base Mana Regen<br>
+                            +15% 
+                            Heal and Shield Power<br>
+                            Active:
+                            Unique - Intervention: Target an area within. After 2.5 seconds, call down a beam of light to restore Health to allies and damage enemy champions.<br>
+                            Cost: 
+                              2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items53.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Runaan's Hurricane</h3><h5>STATS:</h5>
+                        <p>
+                            +40% 
+                            Attack Speed<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +7% 
+                            Move Speed<br>
+                            Passive:
+                            Unique - Peck: Attacks apply magic damage On-Hit.<br>
+                            Unique - Wind's Fury: When Attacking, bolts are fired at up to 2 enemies near the target. Bolts apply On-Hit effects and can Critically Strike.<br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items54.webp" alt="">
+                    <div class="item-description">
+                        <h3>Rylai's Crystal Scepter</h3><h5>STATS:</h5>
+                        <p>
+                            +75 
+                            Ability Power<br>
+                            +400 
+                            Health <br>
+                            Passive:
+                            Unique - Rimefrost: Damaging Abilities Slow enemies.<br>
+                            Cost: 
+                            2600g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items55.webp" alt="">
+                    <div class="item-description">
+                        <h3>Seraph's Embrace</h3><h5>STATS:</h5>
+                        <p>
+                            +70 
+                            Ability Power<br>
+                            +860 
+                            Mana<br>
+                            +200 
+                            Health<br>
+                            +10 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Awe: Gain Ability Power based on Mana.<br>
+Unique - Lifeline: Upon taking damage that would reduce your Health below 30%, gain a Shield based on your current Mana.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items56.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Serpent's Fang</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +15 
+                            Lethality <br>
+                            Passive:
+                            Unique - Shield Reaver: Dealing damage to an enemy champion reduces any shields they gain. When you damage an enemy who is unaffected by Shield Reaver, reduce all shields on them.Item performance differs for melee and ranged users.<br>
+                            Cost: 
+                              2600g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items57.webp" alt="">
+                    <div class="item-description">
+                        <h3>Serylda's Grudge</h3><h5>STATS:</h5>
+                        <p>
+                            +45 
+                            Attack Damage<br>
+                            +30% 
+                            Armor Penetration<br>
+                            +20 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Bitter Cold: Damaging Abilities Slow enemies.<br>
+                            Cost: 
+                             3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items58.webp" alt="">
+                    <div class="item-description">
+                        <h3>Shadowflame</h3><h5>STATS:</h5>
+                        <p>
+                            +100 
+                            Ability Power<br>
+                            +200 
+                            Health
+                             <br>
+                             Passive:
+                             Unique - Cinderbloom: Damage to champions benefits from additional Magic Penetration based on their current Health. If the target was recently affected by Shields, gain the maximum benefit against that target.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items59.webp" alt="">
+                    <div class="item-description">
+                        <h3>Shard of True Ice</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Ability Power<br>
+                            +75 
+                            Health<br>
+                            +100% 
+                            Base Mana Regen<br>
+                            +3 
+                            Gold Per 10 Seconds <br>
+                            Cost: 
+                              400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items60.webp" alt="">
+                    <div class="item-description">
+                        <h3>Spear of Shojin</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +500 
+                            Health<br>
+                            +20 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Exigency: Gain up to (0.15 | 0.1) increased move speed, based on your missing health (Maxed when below 33% Health).Item performance differs for melee and ranged users. <br>
+                            Cost: 
+                            3300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items61.webp" alt="">
+                    <div class="item-description">
+                        <h3>Spirit Visage</h3><h5>STATS:</h5>
+                        <p>
+                            +450 
+                            Health<br>
+                            +60 
+                            Magic Resist<br>
+                            +10 
+                            Ability Haste<br>
+                            +100% 
+                            Base Health Regen<br>
+                            Passive:
+                            Unique - Boundless Vitality: Increases all Healing and Shielding effectiveness on you.<br>
+                            Cost: 
+                            2900g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items62.webp" alt="">
+                    <div class="item-description">
+                        <h3>Staff of Flowing Water</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Ability Power<br>
+                            +8% 
+                            Heal and Shield Power<br>
+                            +75% 
+                            Base Mana Regen<br>
+                            +5% 
+                            Move Speed<br>
+                            Passive:
+                            Unique - Rapids: Healing or Shielding another ally grants you both Ability Power and Ability Haste.<br>
+                            Cost: 
+                            2100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items63.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Statikk Shiv</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +30% 
+                            Attack Speed<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                                Passive:
+                                Unique - Energized: Moving and Attacking will generate an Energized Attack.<br>
+                                Unique - Electroshock: Fires chain lightning that bounces to and damages nearby enemies.<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items64.webp" alt="">
+                    <div class="item-description">
+                        <h3>Sterak's Gage</h3><h5>STATS:</h5>
+                        <p>
+                            +450 
+                            Health<br>
+                            Passive:
+                            Unique - The Claws that Catch: Gain base AD as bonus Attack Damage.<br>
+                            Unique - Lifeline: Upon taking damage that would reduce your Health below 30%, gain a Shield, decaying over time, and Tenacity.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items65.webp" alt="">
+                    <div class="item-description">
+                        <h3>Stormrazor</h3><h5>STATS:</h5>
+                        <p>+55 
+                            Attack Damage<br>
+                            +15% 
+                            Attack Speed<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            Passive:
+                            Unique - Energized: Moving and Attacking will generate an Energized Attack.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items66.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Sunfire Aegis</h3><h5>STATS:</h5>
+                        <p>
+                            +500 
+                            Health<br>
+                            +50 
+                            Armor <br>
+                            Cost: 
+                            2700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items67.webp" alt="">
+                    <div class="item-description">
+                        <h3>The Collector</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +18 
+                            Lethality <br>
+                            Passive:
+                            Unique - Death and Taxes: Dealing damage that would leave an enemy champion below 5% Health executes them. Champion kills grant an additional 25 gold.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items68.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Thornmail</h3><h5>STATS:</h5>
+                        <p>
+                            +350 
+                            Health<br>
+                            +70 
+                            Armor <br>
+                            Passive:
+                            Unique - Thorns: When struck by an Attack, deal damage to the attacker and apply 40% Grievous Wounds if they are a champion.<br>
+                            Cost: 
+                              2700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items69.webp" alt="">
+                    <div class="item-description">
+                        <h3>Titanic Hydra</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage<br>
+                            +500 
+                            Health<br>
+                            Passive:
+                Unique - Colossus: Gain bonus Attack Damage based off of bonus Health.<br>
+                Unique - Cleave: Attacks apply additional damage On-Hit, creating a shockwave that deals damage to enemies behind the target.<br>
+                            Cost: 
+                            3300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items70.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Turbo Chemtank</h3><h5>STATS:</h5>
+                        <p>
+                            +500 
+                            Health<br>
+                            +50 
+                            Magic Resist<br>
+                            +10 
+                            Ability Haste <br>
+                            Active:
+Unique - Supercharged: Grants Move Speed towards enemies or enemy turrets. Once near an enemy (or after 4 seconds) a shockwave is emitted that Slows nearby champions.<br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items71.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Umbral Glaive</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +13 
+                            Lethality<br>
+                            +15 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Blackout: When spotted by an enemy Ward, reveal traps and disable Wards around you. Your Attacks do increased damage to Wards.<br>
+                            Cost: 
+                             2300g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items72.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Zhonya's Hourglass</h3><h5>STATS:</h5>
+                        <p>
+                            +80 
+                            Ability Power<br>
+                            +45 
+                            Armor<br>
+                            +15 
+                            Ability Haste <br>
+                            Active:
+                            Unique - Stasis: You become Invulnerable and Untargetable for 2.5 seconds, but are prevented from taking any other actions during this time.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>                 
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items73.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Void Staff</h3><h5>STATS:</h5>
+                        <p>
+                            +65 
+                            Ability Power<br>
+                            +40% 
+                            Magic Penetration <br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>                 
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items74.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Warmog's Armor</h3><h5>STATS:</h5>
+                        <p>
+                            +800 
+                            Health<br>
+                            +10 
+                            Ability Haste<br>
+                            +200% 
+                            Base Health Regen<br>
+                            Passive:
+                            Unique - Warmog's Heart: If you have at least 1100 bonus Health, restore max Health per second if damage hasn't been taken within 6 seconds<br>
+                            Cost: 
+                              3000g
+                        </p>
+                    </div>
+                </div>                 
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items75.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Winter's Approach</h3><h5>STATS:</h5>
+                        <p>
+                            +400 
+                            Health<br>
+                            +500 
+                            Mana<br>
+                            +15 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Mana Charge: Strike a target with an Ability or Attack to consume a charge and gain 3 bonus Mana, doubled if the target is a champion. Grants a maximum of 360 Mana at which point this item transforms into Fimbulwinter.<br>
+                            Cost: 
+                            2600g
+                        </p>
+                    </div>
+                </div>                 
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items76.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Wit's End</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage<br>
+                            +40% 
+                            Attack Speed<br>
+                            +40 
+                            Magic Resist <br>
+                            Passive:
+                            Unique - Fray: Attacks apply magic damage On-Hit and grant Move Speed.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>                 
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items77.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Zeke's Convergence</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            Health<br>
+                            +250 
+                            Mana<br>
+                            +45 
+                            Armor<br>
+                            +15 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Convergence: After you Immobilize an enemy, your Accomplice's Attacks and Ability hits apply additional damage to that enemy.<br>
+                            Cost: 
+                            2200g
+                        </p>
+                    </div>
+                </div>                 
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Legendary Items78.webp" alt="">
+                    <div class="item-description">
+                        <h3>      Zephyr</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +40% 
+                            Attack Speed<br>
+                            +10% 
+                            Move Speed<br>
+                            +35% 
+                            Tenacity<br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>                                                  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_items">
+    <div class="directory-items-container">
+        <div class="directory-items-section">
+            <div class="items-header">
+                <h3>Mythic Items</h3>
+            </div>
+            <div class="items-container">
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items1.webp" alt="">
+                    <div class="item-description">
+                        <h3>Crown of the Shattered Queen</h3><h5>STATS:</h5>
+                        <p>
+                            +85 
+                            Ability Power<br>
+                            +250 
+                            Health<br>
+                            +600 
+                            Mana<br>
+                            +20 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Safeguard: You are Safeguarded, reducing incoming champion damage. Safeguard persists for 2.5 seconds after taking champion damage.<br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items2.webp" alt="">
+                    <div class="item-description">
+                        <h3>Divine Sunderer</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage<br>
+                            +300 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Spellblade: After using an Ability, your next Attack is enhanced with additional damage On-Hit. If the target is a champion, also heal.<br>
+                            Mythic Passive: Grants all other Legendary items Armor Penetration and Magic Penetration.<br>
+                            Cost: 
+                            3300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items3.webp" alt="">
+                    <div class="item-description">
+                        <h3>Duskblade of Draktharr</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Attack Damage<br>
+                            +18 
+                            Lethality<br>
+                            +15 
+                            Ability Haste <br>
+                            Passive:
+                            When a champion that you have damaged within the last 3 seconds dies, you become Untargetable from non-structures for 1.5 seconds (30s ).<br>
+                            Mythic Passive: Grants all other Legendary items Ability Haste and Move Speed.<br>
+                            Cost: 
+                            3100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items4.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Echoes of Helia</h3><h5>STATS:</h5>
+                        <p>+30 
+                            Ability Power<br>
+                            +200 
+                            Health<br>
+                            +15 
+                            Ability Haste<br>
+                            +125% 
+                            Base Mana Regen<br>
+                            Passive:
+                            Unique - Dissonance: Gain Ability Power per Base Mana Regeneration. Disables Harmony.<br>
+                        Mythic Passive: Grants all other Legendary items Ability Haste.<br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items5.webp" alt="">
+                    <div class="item-description">
+                        <h3>Eclipse</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Attack Damage<br>
+                            +12 
+                            Lethality<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Ever Rising Moon: Hitting a champion with 2 separate Attacks or Abilities within 1.5 seconds deals additional damage, grants you Move Speed and a Shield. <br>
+                            Mythic Passive: Grants all other Legendary items Armor Penetration and Move Speed.<br>
+                            Cost: 
+                            3100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items6.webp" alt="">
+                    <div class="item-description">
+                        <h3>Evenshroud</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            Health <br>
+                            +30 
+                            Armor <br>
+                            +30 
+                            Magic Resist <br>
+                            +20 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Coruscation: After Immobilizing champions or being Immobilized, cause that target and all nearby enemy Champions to take increased damage.<br>
+                            Mythic Passive: Grants all other Legendary items Armor and Magic Resist<br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items7.webp" alt="">
+                    <div class="item-description">
+                        <h3>Everfrost</h3><h5>STATS:</h5>
+                        <p>
+                            +70 
+                            Ability Power <br>
+                            +250 
+                            Health <br>
+                            +600 
+                            Mana <br>
+                            +20 
+                            Ability Haste <br>
+                            Active:
+                            Unique - Glaciate: Deal damage in a cone, Slowing enemies hit. Enemies at the center of the cone are Rooted instead. <br>
+                            Cost: 
+                            2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items8.webp" alt="">
+                    <div class="item-description">
+                        <h3>Galeforce</h3><h5>STATS:</h5>
+                        <p>
+                            +50 
+                            Attack Damage<br>
+                            +15% 
+                            Attack Speed<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +7% 
+                            Move Speed<br>
+                            Active:
+                            Unique - Cloudburst: Dash in target direction, firing three missiles at the lowest Health enemy near your destination. Deals physical damage, increased against low Health targets.<br>
+                            Cost:
+                            3400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items9.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Goredrinker</h3><h5>STATS:</h5>
+                        <p>
+                            +55 
+                            Attack Damage<br>
+                            +400 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            +8% 
+                            Omnivamp<br>
+                            Active:
+                            Unique - Thirsting Slash: Deal damage to nearby enemies. Restore Health for each champion hit.<br>
+                            Cost: 
+                              3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items10.webp" alt="">
+                    <div class="item-description">
+                        <h3>Guinsoo's Rageblade</h3><h5>STATS:</h5>
+                        <p>
+                            +30 
+                            Attack Damage<br>
+                            +30 
+                            Ability Power<br>
+                            +25% 
+                            Attack Speed <br>
+                            Passive:
+                            Unique - Wrath: Attacks apply bonus damage On-Hit. Your Critical Strike Chance is converted into more. <br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items11.webp" alt="">
+                    <div class="item-description">
+                        <h3>Heartsteel</h3><h5>STATS:</h5>
+                        <p>
+                            +800 
+                            Health<br>
+                            +200% 
+                            Base Health Regen<br>
+                            +20 
+                            Ability Haste <br>
+                            Passive:
+                            Mythic Passive: Grants all other Legendary items 1% Increased Health & 6% Champion Size.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items12.webp" alt="">
+                    <div class="item-description">
+                        <h3>3200</h3><h5>STATS:</h5>
+                        <p>
+                            +90 
+                            Ability Power<br>
+                            +6 
+                            Magic Penetration<br>
+                            +250 
+                            Health<br>
+                            +15 
+                            Ability Haste <br>
+                            Active:
+                            Unique - Supersonic: Dash in target direction, unleashing an arc of magic missiles that deal damage. Then, gain Move Speed towards enemy champions.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items13.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Iceborn Gauntlet</h3><h5>STATS:</h5>
+                        <p>
+                            +400 
+                            Health <br>
+                            +50 
+                            Armor <br>
+                            +20 
+                            Ability Haste
+                           <br>
+                           Passive:
+                           Unique - Spellblade: After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2.5s.<br>
+                            Cost: 
+                            3000g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items14.webp" alt="">
+                    <div class="item-description">
+                        <h3>Infinity Edge</h3><h5>STATS:</h5>
+                        <p>
+                            +65 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +45% 
+                            Critical Strike Damage<br>
+                            Passive:
+                            Mythic Passive: Grants all other Legendary items 5 Attack Damage.<br>
+                            Cost: 
+                            3400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items15.webp" alt="">
+                    <div class="item-description">
+                        <h3>Jak'Sho, The Protean</h3><h5>STATS:</h5>
+                        <p>
+                            +400 
+                            Health<br>
+                            +30 
+                            Armor<br>
+                            +30 
+                            Magic Resist<br>
+                            +20 
+                            Ability Haste<br>
+                            Passive: 
+                            Unique - Voidborn Resilience: For each second in champion combat gain a stack granting Armor and Magic Resist, up to 8 stacks max. <br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items16.webp" alt="">
+                    <div class="item-description">
+                        <h3>Liandry's Anguish</h3><h5>STATS:</h5>
+                        <p>
+                            +80 
+                            Ability Power<br>
+                            +600 
+                            Mana<br>
+                            +20 
+                            Ability Haste <br>
+                            Passive:
+                            Unique - Agony: Deal bonus magic damage to Champions based on the target's bonus Health.<br>
+                            Unique - Torment: Dealing damage with Abilities causes enemies to burn over time.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items17.webp" alt="">
+                    <div class="item-description">
+                        <h3>Locket of the Iron Solari</h3><h5>STATS:</h5>
+                        <p>
+                            +200 
+                            Health<br>
+                            +30 
+                            Armor<br>
+                            +30 
+                            Magic Resist<br>
+                            +20 
+                            Ability Haste <br>
+                            Active:
+                            Unique - Devotion: Grant nearby allies a Shield, decaying over time.<br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items18.webp" alt="">
+                    <div class="item-description">
+                        <h3>Luden's Tempest</h3><h5>STATS:</h5>
+                        <p>
+                            +80 
+                            Ability Power<br>
+                            +6 
+                            Magic Penetration<br>
+                            +600 
+                            Mana<br>
+                            +20 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Echo: Damaging Abilities deal magic damage to the target and 3 nearby enemies and grants you Move Speed.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items19.webp" alt="">
+                    <div class="item-description">
+                        <h3> Moonstone Renewer</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Ability Power<br>
+                            +200 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            +100% 
+                            Base Mana Regen <br>
+                            Passive:
+                            Unique - Starlit Grace: Healing or shielding an ally chains to the nearest ally champion (excluding yourself), healing or shielding based on the original amount <br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items20.webp" alt="">
+                    <div class="item-description">
+                        <h3>Navori Quickblades</h3><h5>STATS:</h5>
+                        <p>
+                            +65 
+                            Attack Damage<br>
+                            +20% 
+                            Critical Strike Chance<br>
+                            +15 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Transcendence: Your Attacks reduce your non-Ultimate Ability cooldowns.<br>
+                            Unique - Impermanence: Your abilities deal increased damage based on Critical Strike Chance.<br>
+                            Cost: 
+                            3400g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items21.webp" alt="">
+                    <div class="item-description">
+                        <h3>Night Harvester</h3><h5>STATS:</h5>
+                        <p>
+                            +90 
+                            Ability Power<br>
+                            +300 
+                            Health<br>
+                            +25 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Soulrend: Damaging a champion with Attacks or Abilities deals additional magic damage and grants you Move Speed.<br>
+                            Cost: 
+                             1100g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items22.webp" alt="">
+                    <div class="item-description">
+                        <h3>Radiant Virtue</h3><h5>STATS:</h5>
+                        <p>+350 
+                            Health<br>
+                            +30 
+                            Armor<br>
+                            +30 
+                            Magic Resist<br>
+                            +10 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Guiding Light: Upon casting your Ultimate you Transcend, increasing your Max Health. While Transcended you and allies heal over time.<br>
+                            Cost: 
+                            2700g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items23.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Riftmaker</h3><h5>STATS:</h5>
+                        <p>
+                            +70 
+                            Ability Power <br>
+                            +300 
+                            Health <br>
+                            +15 
+                            Ability Haste <br>
+                            +7% 
+                            Omnivamp <br>
+                            Active:
+                            Unique - Void Corruption: For each second damaging enemy champions, deal bonus damage. At maximum strength, the bonus damage is dealt as true damage instead.<br>
+                            Cost: 
+                            3200g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items24.webp" alt="">
+                    <div class="item-description">
+                        <h3>Rod of Ages</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Ability Power<br>
+                            +400 
+                            Health<br>
+                            +400 
+                            Mana <br>
+                            Passive:
+                            Unique - Eternity: Restore Mana equal to 7% of premitigation damage taken from champions, and Health equal to 25% of Mana spent, up to 20 Health per cast, per second.<br>
+                            Cost: 
+                              2800g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items25.webp" alt="">
+                    <div class="item-description">
+                        <h3>Shurelya's Battlesong</h3><h5>STATS:</h5>
+                        <p>
+                            +35 
+                            Ability Power<br>
+                            +200 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            +100% 
+                            Base Mana Regen <br>
+                            Passive:
+                            Unique - Motivate: Empowering or Protecting another ally Champion grants both allies Move Speed.<br>
+                            Cost: 
+                            2300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items26.webp" alt="">
+                    <div class="item-description">
+                        <h3>Stridebreaker</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Attack Damage<br>
+                            +20% 
+                            Attack Speed<br>
+                            +375 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            Active:
+                            Unique - Halting Slash: Deal damage to nearby enemies, Slowing them. Can be cast while moving.<br>
+                            Cost: 
+                             3300g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items27.webp" alt="">
+                    <div class="item-description">
+                        <h3>
+                            Trinity Force</h3><h5>STATS:</h5>
+                        <p>
+                            +40 
+                            Attack Damage<br>
+                            +33% 
+                            Attack Speed<br>
+                            +300 
+                            Health<br>
+                            +20 
+                            Ability Haste<br>
+                            Passive:
+                            Unique - Threefold Strike: Attacks grant Move Speed. If the target is a champion, increase your base Attack Damage, stacking.<br>
+                            Cost: 
+                            3333g
+                        </p>
+                    </div>
+                </div>    
+                <div class="items-image">
+                    <img class="items_pic_small items_border_normal_small" src="./Assets/Mythic Items28.webp" alt="">
+                    <div class="item-description">
+                        <h3>Youmuu's Ghostblade</h3><h5>STATS:</h5>
+                        <p>
+                            +60 
+                            Attack Damage<br>
+                            +18 
+                            Lethality<br>
+                            +15 
+                            Ability Haste
+                             <br>
+                            Active:
+                            Unique - Wraith Step: Gain Move Speed and Ghosting.<br>
+                            Cost: 
+                            3100g
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- To the Jungle -->
+<section id="maps">
+<div class="slider__title">
+    <div class="slider__title__row">
+                <div class="slider__heading">
+                    <h3>Guide to secured your victory </h3>
+                    <h2>WELCOME TO THE JUNGLE</h2>
+                </div>
+                <div class="slider__title__text">
+                    <p>The jungle is a unique and critical part of the game's map filled with neutral monster camps, buffs, and hidden paths.</p>
+                </div>
+                <div class="container-wrap">
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="Assets/Red_buff.png">
+                            <div class="info">
+                                <h1>Red<br>Brambleback</h1>
+                                <p>Killing the Red Brambleback grants buff which grants health<br>regeneration out of combat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-2">
+                        <div class="card">
+                            <img src="Assets/Blue_buff.png">
+                            <div class="info">
+                                <h1>Blue Sentinel</h1>
+                                <p>Killing the Blue Sentinel grants the Crest of Insight Crest of Insight.A buff which grants increased mana regeneration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-3">
+                        <div class="card">
+                            <img src="Assets/Baron_Nashor.png">
+                            <div class="info">
+                                <h1>Baron Nashor</h1>
+                                <p>Baron Nashor grants Hand of Baron Hand of Baron to all living teammates for 180 seconds.<br>Which grants Attack damage icon bonus attack damage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-4">
+                        <div class="card">
+                            <img src="Assets/Bulbasaur.png">
+                            <div class="info">
+                                <h1>Rift Scuttler Camp</h1>
+                                <p>The Rift Scuttler is unique amongst all monsters for two reasons: she will not retaliate against an attacker<br>instead attempting to flee directly away from them</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</section>
+
 
 <section id="community">
     <div class="container">
@@ -548,65 +3842,30 @@
             </a>
         </div>
     </div>
+</section>
 
-<!-- To the Jungle -->
-<section id="maps"></section>
-<div class="slider__title">
-    <div class="slider__title__row">
-        <div class="slider__heading">
-            <h3>Guide to secured your victory </h3>
-            <h2>WELCOME TO THE JUNGLE</h2>
+<section id="developers">
+        <div class="container">
+        </h1>No copyright infringement intendend. You can view all the details of the website and the team build this web here</h1>
+        <div>
         </div>
-        <div class="slider__title__text">
-            <p>The jungle is a unique and critical part of the game's map filled with neutral monster camps, buffs, and hidden paths.</p>
-        </div>
+       <div class="developers-links">
+        <a href="https://github.com/GDudut21/Activity-2#activity-2" target="_blank">
+                <img src="Assets/github_PNG84.png" alt="GitHub">
     </div>
-</div>
+    <div>
+    </div>
+    </section>
 
-<div class="wrapper">
-    <div class="card">
-        <img src="Assets/Red_buff.png">
-        <div class="info">
-            <h1>Red<br>Brambleback</h1>
-            <p>Killing the Red Brambleback grants buff which grants health<br>regeneration out of combat</p>
-        </div>
+<section id="about">
+        <div class="container">
+       </p> ™ &amp; © 2023 Riot Games, Inc.  League of Legends and all related logos, characters, names and distinctive likenesses thereof are exclusive property of Riot Games, Inc.  All Rights Reserved.</p>  
     </div>
-</div>
+    </div>
+    </section>
 
-<div class="wrapper-2">
-    <div class="card">
-        <img src="Assets/Blue_buff.png">
-        <div class="info">
-            <h1>Blue Sentinel</h1>
-            <p>Killing the Blue Sentinel grants the Crest of Insight Crest of Insight.A buff which grants increased mana regeneration</p>
-        </div>
-    </div>
-</div>
 
-<div class="wrapper-3">
-    <div class="card">
-        <img src="Assets/Baron_Nashor.png">
-        <div class="info">
-            <h1>Baron Nashor</h1>
-            <p>Baron Nashor grants Hand of Baron Hand of Baron to all living teammates for 180 seconds.<br>Which grants Attack damage icon bonus attack damage</p>
-        </div>
-    </div>
-</div>
-
-<div class="wrapper-4">
-    <div class="card">
-        <img src="Assets/Bulbasaur.png">
-        <div class="info">
-            <h1>Rift Scuttler Camp</h1>
-            <p>The Rift Scuttler is unique amongst all monsters for two reasons: she will not retaliate against an attacker<br>instead attempting to flee directly away from them</p>
-        </div>
-    </div>
-</div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
