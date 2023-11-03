@@ -273,7 +273,7 @@ h3 {
 h3 {
   display: block;
   font-size: 1.17em;
-  margin-block-start: .5em;
+  margin-block-start: 0.5em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
@@ -293,6 +293,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 20px 0 5px 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .slider__title__row {
@@ -468,7 +469,6 @@ h2 {
   img {
   opacity: 1;
 }
-
 
 .slider__left__wrapper
   .slider__navigation__col
@@ -715,21 +715,21 @@ h2 {
 }
 
 .container_items {
-  background-color: #CFB53B;
+  background-color: #cfb53b;
   padding: 20px;
   width: 900px;
-  height:auto;
+  height: auto;
   margin: auto;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
 
-.items-container{
+.items-container {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .items-header h3 {
@@ -750,8 +750,6 @@ h2 {
   width: 42px;
   height: 42px;
 }
-
-
 
 .item-description {
   position: absolute;
@@ -785,8 +783,6 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
-
-
 
 /* Style for the Community Section with League of Legends Theme */
 #community {
@@ -828,15 +824,21 @@ h2 {
   margin-right: 10px;
 }
 
-
 /* Container in the jungle */
 /*Maps section*/
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
-.container-wrap{
+.slider__heading {
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+}
+.slider__title__text {
+  color: white;
+}
+.container-wrap {
   display: flex;
   flex-wrap: flex;
   gap: 12rem;
