@@ -175,7 +175,11 @@ a:hover {
   height: auto;
   margin: 0 10px;
 }
-
+.slideshow video {
+  max-width: 300px;
+  height: auto;
+  margin: 0 10px;
+}
 section#home {
   text-align: center;
 }
@@ -263,6 +267,7 @@ h3 {
 
 #roles {
   background-color: rgba(0, 0, 0, 0.5);
+  background: white;
 }
 .slider__row {
   background: white;
