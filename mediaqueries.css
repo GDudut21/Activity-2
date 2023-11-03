@@ -8,7 +8,7 @@
     margin: 10px;
   }
 
-  .image-container {
+  .image-container .item-description{
     height: auto;
     width: 100%;
   }
