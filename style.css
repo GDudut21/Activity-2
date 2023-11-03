@@ -266,8 +266,13 @@ h3 {
 /* ROLES */
 
 #roles {
-  background-color: rgba(0, 0, 0, 0.5);
   background: white;
+}
+#roles .slider__title__row h2 {
+  color: black;
+}
+#roles .slider__title__row p {
+  color: black;
 }
 .slider__row {
   background: white;
@@ -299,7 +304,6 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 20px 0 5px 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .slider__title__row {
