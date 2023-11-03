@@ -9,6 +9,7 @@
   }
 
   .image-container .item-description{
+  .image-container .item-description{
     height: auto;
     width: 100%;
   }
@@ -149,6 +150,7 @@
     padding: 0;
   }
   .slider__container
+    .container_items
     .slider__row
     .slider__right__wrapper
     .slider__right__col
@@ -157,6 +159,7 @@
     max-height: 450px;
   }
   .slider__container
+    .container_items
     .slider__row
     .slider__right__wrapper
     .slider__right__col
@@ -183,6 +186,7 @@
   }
 
   .slider__container
+    .container_items
     .slider__row
     .slider__right__wrapper
     .slider__right__col
@@ -191,6 +195,7 @@
     max-width: 350px;
   }
   .slider__container
+    .container_items
     .slider__row
     .slider__right__wrapper
     .slider__right__col
