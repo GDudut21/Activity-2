@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap");
 
 :root {
-  --text-color: #f9f9f9;
+  --text-color: black;
   --get-button: rgb(208, 168, 92);
-  --nav-background: #111;
   --border-radius: 6.4px;
 }
 * {
@@ -263,9 +262,11 @@ h3 {
 /* ROLES */
 
 #roles {
-  background-color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
+.slider__row {
+  background: white;
+}
 .slider__right__wrapper p {
   text-align: justify;
 }
@@ -460,7 +461,6 @@ h2 {
   width: 30px;
   object-fit: cover;
 }
-
 .slider__left__wrapper
   .slider__navigation__col
   .slider__navigation
@@ -652,7 +652,7 @@ h2 {
   overflow: visible;
   bottom: 150px;
   text-align: center;
-  color: #f9f9f9;
+  color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -682,7 +682,7 @@ h2 {
   .slider__right__image
   .slider__image__name
   p {
-  background: var(--nav-background);
+  background-color: rgba(0, 0, 0, 0.3);
   display: inline-block;
   padding: 0 10px;
   border-radius: 6.4px;
@@ -711,7 +711,7 @@ h2 {
 
 /* ITEMS */
 #items {
-  background-color: white;
+  background: rgba(76, 175, 80, 0.1);
 }
 
 .container_items {
