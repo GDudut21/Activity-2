@@ -832,6 +832,30 @@ h2 {
   height: 50px;
   margin-right: 10px;
 }
+/*style for about*/
+#about {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+#about p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+/*developers*/
+#developers {
+  max-width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+#developers .container {
+  background-color: none;
+}
+.developers-links img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
 
 /* Container in the jungle */
 /*Maps section*/
