@@ -1,3 +1,4 @@
+
 const btns = document.querySelectorAll(".navigation__col");
 const slideVideo = document.querySelectorAll(".slider__video");
 const slides = document.querySelectorAll(".slider__right__image");
@@ -65,3 +66,4 @@ function closeMenuOnClickOutside(event) {
     document.body.removeEventListener("click", closeMenuOnClickOutside);
   }
 }
+
