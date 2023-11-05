@@ -971,11 +971,11 @@ h2 {
   opacity: 0.7;
 }
 
+/*Dragon Pit*/
 .container{
   margin: 100px auto;
   width: 75;
 }
-
 
 .text h2{
   font-size: 50px;
@@ -983,8 +983,10 @@ h2 {
 }
 
 .text p{
-  font-size: 20px;
+  font-size: 15px;
 }
+/*Dragon*/
+
 /*hamburger*/
 
 #hamburger-nav {
