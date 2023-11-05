@@ -986,6 +986,90 @@ h2 {
   font-size: 20px;
 }
 
+/*Dragons*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.figure{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+::-webkit-scrollbar{
+  height: 8px;
+}
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #6e93f7;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #4070f4;
+}
+
+.holder {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+  width: 100%;
+  background: #cfb53b;
+  border-radius: 12px;
+  padding: 30px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.holder .board{
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.board .image{
+  height: 150opx;
+  width: 150px;
+  background: #e44d26;
+  border-radius: 50%;
+}
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.board h2{
+  margin: top 25px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.board {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
 /*hamburger*/
 
 #hamburger-nav {
