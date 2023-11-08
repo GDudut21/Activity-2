@@ -266,3 +266,14 @@
     font-size: 14px;
   }
 }
+
+  /* Draogon Jungle*/
+
+  @media screen {
+    .holder {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  

@@ -972,9 +972,10 @@ h2 {
 }
 
 /*Dragon Pit*/
-.container{
-  margin: 100px auto;
-  width: 90;
+.container-dragon{
+  display: flex;
+  flex-wrap: flex;
+  gap: 5rem;
 }
 
 .text h2{
@@ -1009,7 +1010,7 @@ h2 {
   height: 100%;
   max-width: 600px;
   width: 100%;
-  background: #ffcc29;
+  background: #cfb53b;
   border-radius: 12px;
   padding: 30px;
   scroll-snap-type: x mandatory;
@@ -1029,7 +1030,7 @@ h2 {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 .board .image{
-  height: 150opx;
+  height: 150px;
   width: 150px;
   background: #e44d26;
   border-radius: 50%;
