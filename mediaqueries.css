@@ -8,7 +8,7 @@
     margin: 10px;
   }
 
-  .image-container .item-description{
+  .image-container .item-description {
     height: auto;
     width: 100%;
   }
@@ -206,10 +206,16 @@
 
 /*Hamburger nav  need fix icon not appearing*/
 @media (max-width: 1100px) {
-  .web-nav {
+  .nav-links {
     display: none;
   }
-
+  .web-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+  }
   .hamburger-nav {
     position: absolute;
     top: 0;
@@ -266,14 +272,3 @@
     font-size: 14px;
   }
 }
-
-  /* Draogon Jungle*/
-
-  @media screen {
-    .holder {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-
-  
