@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 805px) {
   .slider__title .slider__title__row .slider__heading h2 {
     font-size: calc(40px + 3.03vw);
   }
@@ -120,13 +120,6 @@
   .slider__title .slider__title__row .slider__title__text {
     font-size: 13px;
     margin-top: 5px;
-  }
-  .container_items{
-    width: 500px;
-    height: auto;
-  }
-  .slider__row{
-  width: 550px;
   }
 }
 
@@ -209,41 +202,6 @@
     img {
     max-height: 350px;
   }
-  .container_items{
-    width: 300px;
-    height: auto;
-  }
-}
-  @media screen and (max-width: 390px) {
-  .container_items{
-    width: 300px;
-    height: auto;
-  }
-  .slider__row{
-  width: 550px;
-  }
-  .slider__image__name{
-    margin-left: 70px;
-    width: 350px;
-    height: auto;
-  }
-  
-}
-
-@media screen and (max-width: 430px) {
-  .container_items{
-    width: 300px;
-    height: auto;
-  }
-  .slider__row{
-  width: 550px;
-  }
-  .slider__image__name{
-    margin-left: 70px;
-    width: 350px;
-    height: auto;
-  }
-  
 }
 
 /*Hamburger nav  need fix icon not appearing*/
