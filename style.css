@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap");
 
 :root {
-  --text-color: black;
+  --text-color: #f9f9f9;
   --get-button: rgb(208, 168, 92);
+  --nav-background: #111;
   --border-radius: 6.4px;
 }
 * {
@@ -175,11 +176,7 @@ a:hover {
   height: auto;
   margin: 0 10px;
 }
-.slideshow video {
-  max-width: 300px;
-  height: auto;
-  margin: 0 10px;
-}
+
 section#home {
   text-align: center;
 }
@@ -266,17 +263,9 @@ h3 {
 /* ROLES */
 
 #roles {
-  background: white;
+  background-color: #f9f9f9;
 }
-#roles .slider__title__row h2 {
-  color: black;
-}
-#roles .slider__title__row p {
-  color: black;
-}
-.slider__row {
-  background: white;
-}
+
 .slider__right__wrapper p {
   text-align: justify;
 }
@@ -284,7 +273,7 @@ h3 {
 h3 {
   display: block;
   font-size: 1.17em;
-  margin-block-start: 0.5em;
+  margin-block-start: .5em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
@@ -367,7 +356,6 @@ h2 {
 
 .slider__container {
   display: flex;
-  padding: 200px 0;
 }
 
 .slider__container .slider__row {
@@ -470,6 +458,7 @@ h2 {
   width: 30px;
   object-fit: cover;
 }
+
 .slider__left__wrapper
   .slider__navigation__col
   .slider__navigation
@@ -478,6 +467,7 @@ h2 {
   img {
   opacity: 1;
 }
+
 
 .slider__left__wrapper
   .slider__navigation__col
@@ -661,7 +651,7 @@ h2 {
   overflow: visible;
   bottom: 150px;
   text-align: center;
-  color: white;
+  color: #f9f9f9;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -691,7 +681,7 @@ h2 {
   .slider__right__image
   .slider__image__name
   p {
-  background-color: rgba(0, 0, 0, 0.3);
+  background: var(--nav-background);
   display: inline-block;
   padding: 0 10px;
   border-radius: 6.4px;
@@ -710,35 +700,35 @@ h2 {
   left: 0;
   bottom: 0;
   top: 0;
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
   border: 3px solid rgb(186, 194, 204);
   border-top-color: goldenrod;
   border-bottom-color: goldenrod;
-  animation: 5s spin infinite ease-in-out;
+  animation: 6s spin infinite ease-in-out;
 }
 
 /* ITEMS */
 #items {
-  background: rgba(76, 175, 80, 0.1);
+  background-color: white;
 }
 
 .container_items {
-  background-color: #cfb53b;
+  background-color: #CFB53B;
   padding: 20px;
   width: 900px;
-  height: auto;
+  height:auto;
   margin: auto;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
 
-.items-container {
+.items-container{
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: .5rem;
 }
 
 .items-header h3 {
@@ -759,6 +749,8 @@ h2 {
   width: 42px;
   height: 42px;
 }
+
+
 
 .item-description {
   position: absolute;
@@ -792,6 +784,8 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
+
+
 
 /* Style for the Community Section with League of Legends Theme */
 #community {
@@ -832,30 +826,7 @@ h2 {
   height: 50px;
   margin-right: 10px;
 }
-/*style for about*/
-#about {
-  color: #fff;
-  text-align: center;
-  margin-top: 20px;
-}
-#about p {
-  font-size: 1rem;
-  margin-bottom: 40px;
-}
-/*developers*/
-#developers {
-  max-width: 100%;
-  padding: 8px 12px;
-  border-radius: 8px;
-}
-#developers .container {
-  background-color: none;
-}
-.developers-links img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
+
 
 /* Container in the jungle */
 /*Maps section*/
@@ -863,15 +834,8 @@ h2 {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-.slider__heading {
-  color: white;
-  font-weight: 900;
-  text-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
-}
-.slider__title__text {
-  color: white;
-}
-.container-wrap {
+
+.container-wrap{
   display: flex;
   flex-wrap: flex;
   gap: 12rem;
@@ -888,6 +852,7 @@ h2 {
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
 }
+
 .card:hover {
   transform: translateY(20px);
 }
@@ -963,10 +928,7 @@ h2 {
   color: green; /* Hover color for the fourth wrapper */
   opacity: 0.7;
 }
-.wrapper-5:hover .info h1 {
-  color: rgb(227, 136, 40); /* Hover color for the fourth wrapper */
-  opacity: 0.7;
-}
+
 /*hamburger*/
 
 #hamburger-nav {
